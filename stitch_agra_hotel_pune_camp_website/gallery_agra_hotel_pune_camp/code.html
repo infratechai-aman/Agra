@@ -1,0 +1,775 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agra Hotel – Pune Camp | Traditional Taste of Pune</title>
+<meta content="Experience authentic Mughlai, North Indian and Biryani cuisine at Agra Hotel, Pune Camp. Traditional taste, warm hospitality, and timeless heritage." name="description">
+<!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#C9A45C',
+              'gold-hover': '#b59146',
+              'gold-light': '#E8D7B0',
+              walnut: '#241812',
+              'walnut-dark': '#18100C',
+              'walnut-light': '#36241B',
+              olive: '#2E3321',
+              'olive-dark': '#232719',
+              cream: '#FAF8F3',
+              sand: '#F3EFE6',
+              parchment: '#EBE5D8'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          letterSpacing: {
+            'widest-plus': '.25em',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Typography & Base Styling -->
+<style data-purpose="typography-and-base">
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background-color: #FAF8F3;
+      color: #241812;
+      overflow-x: hidden;
+    }
+    .font-serif {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    ::selection {
+      background-color: #C9A45C;
+      color: #18100C;
+    }
+  </style>
+<!-- Custom Decorative & Layout Styles -->
+<style data-purpose="layout-and-decorative">
+    /* Subtle parchment textured overlay simulation */
+    .bg-parchment-pattern {
+      background-color: #FAF8F3;
+      background-image: radial-gradient(#241812 0.45px, transparent 0.45px);
+      background-size: 24px 24px;
+      opacity: 0.98;
+    }
+    .gold-glow {
+      box-shadow: 0 10px 30px -10px rgba(201, 164, 92, 0.35);
+    }
+    /* Elegant line separator */
+    .gold-divider {
+      background: linear-gradient(90deg, transparent, #C9A45C, transparent);
+      height: 1px;
+    }
+  </style>
+<meta content="web_standard" name="shell-type"></head>
+<body class="antialiased selection:bg-brand-gold selection:text-brand-walnut-dark" style="background-color: rgb(244, 239, 230); color: rgb(36, 24, 18);">
+<!-- BEGIN: NavigationBar -->
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-4 sm:px-8 bg-transparent" data-purpose="site-navigation" id="main-header">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<!-- Brand Logo Lockup with Historic Arch Mark -->
+<a class="flex items-center gap-3 group text-decoration-none" href="#hero">
+<div class="w-10 h-10 border border-brand-gold/60 rounded-t-full flex items-center justify-center p-1.5 transition-transform group-hover:scale-105">
+<svg class="w-full h-full text-brand-gold" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24">
+<path d="M3 21h18M5 21V9a7 7 0 0 1 14 0v12M9 21V11a3 3 0 0 1 6 0v10"></path>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="font-serif tracking-widest text-lg sm:text-xl font-bold uppercase text-white drop-shadow-sm group-hover:text-brand-gold transition-colors">Agra Hotel</span>
+<span class="text-[9px] uppercase tracking-widest-plus text-brand-gold font-medium">Pune Camp</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-white/90">
+<a class="hover:text-brand-gold transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all" href="#hero">Home</a>
+<a class="hover:text-brand-gold transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all" href="#story">About</a>
+<a class="hover:text-brand-gold transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all" href="#specialties">Menu</a>
+<a class="hover:text-brand-gold transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all" href="#experience">Gallery</a>
+<a class="hover:text-brand-gold transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all" href="#reservations">Reservations</a>
+<a class="hover:text-brand-gold transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all" href="#contact">Contact</a>
+</nav>
+<!-- CTA Contact Pill -->
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-gold hover:bg-brand-gold-hover text-brand-walnut-dark font-semibold text-xs sm:text-sm tracking-wider uppercase transition-all shadow-md transform hover:-translate-y-0.5" data-purpose="primary-call-cta" href="tel:+919876543210">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="">Call Now</span>
+</a>
+<!-- Mobile Menu Toggle Button -->
+<button aria-label="Toggle Navigation Menu" class="md:hidden text-white p-2 focus:outline-none" id="mobile-menu-toggle" type="button">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+<!-- Mobile Dropdown Navigation -->
+<div class="hidden md:hidden bg-brand-walnut/95 backdrop-blur-md mt-3 rounded-2xl p-6 border border-brand-gold/20 flex-col gap-4 text-center" id="mobile-menu">
+<a class="text-white hover:text-brand-gold text-base py-1" href="#hero">Home</a>
+<a class="text-white hover:text-brand-gold text-base py-1" href="#story">About</a>
+<a class="text-white hover:text-brand-gold text-base py-1" href="#specialties">Menu</a>
+<a class="text-white hover:text-brand-gold text-base py-1" href="#experience">Gallery</a>
+<a class="text-white hover:text-brand-gold text-base py-1" href="#reservations">Reservations</a>
+<a class="text-white hover:text-brand-gold text-base py-1" href="#contact">Contact</a>
+</div>
+</header>
+<!-- END: NavigationBar -->
+<main><div class="flex flex-col w-full">
+<!-- HERO SECTION: Editorial Chiaroscuro Banner -->
+<section class="relative w-full overflow-hidden bg-primary-container text-surface-bright -mt-24 pt-36 pb-20 sm:pb-28">
+<!-- Atmospheric Ambient Glows & Overlay -->
+<div class="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary-container/95 to-primary-container z-0 pointer-events-none"></div>
+<div class="absolute -top-32 right-10 w-96 h-96 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 left-1/4 w-[32rem] h-64 rounded-full bg-on-tertiary-container/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 flex flex-col items-center text-center">
+<!-- Eyebrow Badge -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-tertiary-container text-secondary-fixed text-label-eyebrow font-label-eyebrow uppercase tracking-widest mb-6 shadow-md">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="">A Glimpse of Agra Hotel</span>
+</div>
+<!-- Main Headline -->
+<h1 class="text-display-hero font-display-hero text-surface-bright max-w-4xl tracking-tight leading-tight">
+        The Ambience &amp; Flavours
+      </h1>
+<!-- Editorial Rule / Divider -->
+<div class="w-24 h-0.5 bg-gradient-to-r from-transparent via-secondary-fixed to-transparent my-6"></div>
+<!-- Subtitle -->
+<p class="text-body-lg font-body-lg text-surface-container max-w-2xl font-light leading-relaxed">
+        Immerse yourself in our warm wooden interiors, cozy booth dining, and mouthwatering culinary creations in Pune Camp. An authentic heritage legacy sustained over decades.
+      </p>
+<!-- Quick Anchor Badges -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 w-full max-w-3xl text-left">
+<div class="bg-primary/60 backdrop-blur-md rounded-xl p-4 shadow-lg flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/10 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-title-lg">table_restaurant</span>
+</div>
+<div>
+<div class="text-label-eyebrow font-label-eyebrow text-secondary-fixed uppercase">Interiors</div>
+<div class="text-body-md font-body-md text-surface-bright font-medium">Classic Booths</div>
+</div>
+</div>
+<div class="bg-primary/60 backdrop-blur-md rounded-xl p-4 shadow-lg flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/10 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-title-lg">diversity_3</span>
+</div>
+<div>
+<div class="text-label-eyebrow font-label-eyebrow text-secondary-fixed uppercase">Hospitality</div>
+<div class="text-body-md font-body-md text-surface-bright font-medium">Family Gathering</div>
+</div>
+</div>
+<div class="bg-primary/60 backdrop-blur-md rounded-xl p-4 shadow-lg flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/10 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-title-lg">skillet</span>
+</div>
+<div>
+<div class="text-label-eyebrow font-label-eyebrow text-secondary-fixed uppercase">Cuisine</div>
+<div class="text-body-md font-body-md text-surface-bright font-medium">Clay Dum Handi</div>
+</div>
+</div>
+<div class="bg-primary/60 backdrop-blur-md rounded-xl p-4 shadow-lg flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/10 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-title-lg">award_star</span>
+</div>
+<div>
+<div class="text-label-eyebrow font-label-eyebrow text-secondary-fixed uppercase">Heritage</div>
+<div class="text-body-md font-body-md text-surface-bright font-medium">Pune Camp Trust</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE FILTER BAR SECTION -->
+<section class="sticky top-16 z-30 bg-surface-bright/95 backdrop-blur-md py-5 shadow-sm" style="background-color: rgba(244, 239, 230, 0.95); border-bottom: 1px solid rgba(201, 164, 92, 0.25);">
+<div class="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 scrollbar-none" id="filter-container"><button class="gallery-filter-btn px-5 py-2 rounded-full text-label-button font-label-button bg-primary text-secondary-fixed border border-brand-gold/40 shadow transition-all whitespace-nowrap active-tab" data-filter="all">All Moments</button><button class="gallery-filter-btn px-5 py-2 rounded-full text-label-button font-label-button bg-surface-container text-on-surface hover:bg-surface-variant transition-all whitespace-nowrap border border-outline-variant/40" data-filter="interiors">Restaurant Interiors</button><button class="gallery-filter-btn px-5 py-2 rounded-full text-label-button font-label-button bg-surface-container text-on-surface hover:bg-surface-variant transition-all whitespace-nowrap border border-outline-variant/40" data-filter="family">Family Dining</button><button class="gallery-filter-btn px-5 py-2 rounded-full text-label-button font-label-button bg-surface-container text-on-surface hover:bg-surface-variant transition-all whitespace-nowrap border border-outline-variant/40" data-filter="dishes">Signature Dishes</button><button class="gallery-filter-btn px-5 py-2 rounded-full text-label-button font-label-button bg-surface-container text-on-surface hover:bg-surface-variant transition-all whitespace-nowrap border border-outline-variant/40" data-filter="heritage">Heritage &amp; Details</button></div>
+<div class="hidden md:flex items-center gap-2 text-caption font-caption text-on-surface-variant">
+<span class="material-symbols-outlined text-title-lg text-secondary">photo_camera</span>
+<span id="gallery-count" class="">Displaying all 10 curated archives</span>
+</div>
+</div>
+</section>
+<!-- GALLERY GRID SECTION -->
+<section class="max-w-7xl mx-auto px-4 sm:px-8 py-16 w-full">
+<!-- Asymmetric Editorial Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-start" id="gallery-grid">
+<!-- ITEM 1: Classic Wooden Booth Seating (Wide Feature) -->
+<div class="gallery-item lg:col-span-8 group relative rounded-xl overflow-hidden bg-primary-container shadow-md cursor-pointer" data-category="interiors" data-desc="Intimate booth seating framed in dark walnut with modern glass partitions, preserving the cozy Pune Camp dining comfort." data-tag="Restaurant Interiors" data-title="Historic Walnut Booths">
+<div class="relative h-[420px] sm:h-[480px] w-full overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Traditional Indian dining room booth seating at Agra Hotel Pune Camp featuring rich walnut upholstered benches, glass partitions, ceiling fans, ambient lighting, and warm welcoming atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBAnS_1BtEm8gGWir6YAS2gH063lYwCUKYmS_Y7A-Mnp9x8wCRlfjKlM8QZGtOurOQ3r_clbiww0ZLv-NRB2mRHkeWV7h0cT0AogpkA_vkqVFcJACZHykBjZ9g3P25r8Tnfz12F-xgpikVoy6_4otXKodoq1u35dGuwEI3n0iw7gBHQDsbH1BNpMzBrB3CW0wgvnfI_cHNY_30f7UGU5tKkWlVU2OVWnLMo72VPA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+</div>
+<div class="absolute top-4 left-4 z-10">
+<span class="px-3 py-1 rounded-full bg-primary/80 backdrop-blur-md text-secondary-fixed text-label-eyebrow font-label-eyebrow uppercase tracking-widest">
+            Interiors
+          </span>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-6 sm:p-8 flex items-end justify-between z-10">
+<div class="space-y-1">
+<h3 class="text-headline-md font-headline-md text-surface-bright font-serif">Historic Walnut Booths</h3>
+<p class="text-body-md font-body-md text-surface-container font-light max-w-lg">
+              Classic upholstered deep booths providing privacy and comfortable unhurried dining.
+            </p>
+</div>
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+<span class="material-symbols-outlined text-title-lg">zoom_in</span>
+</div>
+</div>
+</div>
+<!-- ITEM 2: Dum Biryani Clay Pot Handi (Editorial Portrait) -->
+<div class="gallery-item lg:col-span-4 group relative rounded-xl overflow-hidden bg-primary-container shadow-md cursor-pointer" data-category="dishes" data-desc="Slow-cooked overnight in sealed earthenware handi with saffron, whole cardamom, and caramelized crisp shallots." data-tag="Signature Dishes" data-title="Clay Handi Mutton Dum Biryani">
+<div class="relative h-[420px] sm:h-[480px] w-full overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Authentic Mughlai Dum Biryani served in a rustic clay handi pot with fragrant basmati rice, mint garnishing, fried onions, and side dips on a rich wooden table." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqcqokkzy7cvdhonsQEQmUXjDAbK2Am25HuiUlQPuAcHirc3HpFgzm0UZg_LMPCLA0Y9_P30J0Y_Vx54as0jrKWh3REWl2RoYFkbj1-hblRtsHQyq2ZidcoXVcvXAVEDAZQZUSY5mQhaeMsGHxSq5IEzrCJrcLDRUflNvPQG8ZWOcakve4noiK_0DOaQuwbbcZdb4SnagyXcwZARal564BC18hCfT5rjG9gt87iA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+</div>
+<div class="absolute top-4 left-4 z-10">
+<span class="px-3 py-1 rounded-full bg-primary/80 backdrop-blur-md text-secondary-fixed text-label-eyebrow font-label-eyebrow uppercase tracking-widest">
+            Specialty Dish
+          </span>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-6 flex items-end justify-between z-10">
+<div class="space-y-1">
+<h3 class="text-headline-sm font-headline-sm text-surface-bright font-serif">Dum Handi Biryani</h3>
+<p class="text-caption font-caption text-surface-container">Slow-cooked in earthenware sealed with aromatic dough.</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center transform group-hover:scale-110 transition-transform shadow flex-shrink-0">
+<span class="material-symbols-outlined">zoom_in</span>
+</div>
+</div>
+</div>
+<!-- ITEM 3: Lively Family Dining Hall (Full Atmosphere) -->
+<div class="gallery-item lg:col-span-12 group relative rounded-xl overflow-hidden bg-primary-container shadow-md cursor-pointer" data-category="family" data-desc="Multi-generational families dining amidst sparkling warm chandeliers, carved teak partition screens, and rich brass vessels." data-tag="Family Dining" data-title="Family Dining &amp; Evening Gatherings">
+<div class="relative h-[360px] sm:h-[500px] w-full overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Warmly lit dining hall filled with happy multi-generational families dining together, ornate chandeliers, carved wooden arches, brass chandeliers, and authentic Indian feast spread." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrAIAlfCD7UJ252DND-dvDL6N7Fq4pea_YOLUamtpMDQMxr0Ui1xQPnUJxDNl9DfGGpkg4j9taCd92yY2l9KDx_XOOlxnWB747afOzA6RWFwxrb89lVj43S9LGHHF0EV6-89aqMrrZbacvn0EP2_KOhc76S4lRZZtrBhm1HKaseF1Wi4PJjDarEdh1bXMBFKwhkoz4qeYCTWdPr4annbBuCn7yLeCSh85y_B_uLw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+</div>
+<div class="absolute top-6 left-6 z-10 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-tertiary-container text-secondary-fixed text-label-eyebrow font-label-eyebrow uppercase tracking-widest">
+            Family Dining
+          </span>
+<span class="px-3 py-1 rounded-full bg-surface-bright/20 backdrop-blur-md text-surface-bright text-label-eyebrow font-label-eyebrow uppercase tracking-widest">
+            Timeless Gatherings
+          </span>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-6 sm:p-10 flex flex-col sm:flex-row sm:items-end justify-between gap-4 z-10">
+<div class="space-y-2 max-w-xl">
+<h3 class="text-headline-lg font-headline-lg text-surface-bright font-serif">The Warmth of Family Celebrations</h3>
+<p class="text-body-md font-body-md text-surface-container font-light">
+              Where Pune families have celebrated milestones, Sunday dinners, and reunion lunches for generations with heartfelt hospitality.
+            </p>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-caption font-caption text-secondary-fixed uppercase tracking-wider hidden sm:inline">Click to enlarge</span>
+<div class="w-12 h-12 rounded-full bg-secondary text-surface-bright flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-lg">
+<span class="material-symbols-outlined text-title-lg">fullscreen</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ITEM 4: Sizzling Tandoori Charcoal Platter -->
+<div class="gallery-item lg:col-span-4 group relative rounded-xl overflow-hidden bg-primary-container shadow-md cursor-pointer" data-category="dishes" data-desc="Marinated in hung yogurt and ground spices, charred over live coals and served with mint chutney and charred lime." data-tag="Signature Dishes" data-title="Charcoal Smoked Tandoori Delicacies">
+<div class="relative h-[380px] w-full overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Sizzling chicken tandoori and seekh kebabs on an authentic iron sizzler grill with smoke rising, lime wedges, sliced red onions, and fresh mint chutney." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4wkiixJZkZxKrzbuF5meITD_Wft4KSfv7eaCKQAdApuS79rzM5AWId_wDLlgqjlEXJafgqZ5PYQO6m8J13yJbT2lfIjDQPqap6uD-2vKLJ8Aewl41vmxEOEj8z0K74fCDwSjUGEXTVQG07EwnPUa56yB1sq0HkSAYCLyyTbJVqHmx6dztMa3U9xcOOWdLnvT1Mh9tC53nxeVvpFBYmHsKAzmHqmwM5mX7oC2TvQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+</div>
+<div class="absolute top-4 left-4 z-10">
+<span class="px-3 py-1 rounded-full bg-primary/80 backdrop-blur-md text-secondary-fixed text-label-eyebrow font-label-eyebrow uppercase tracking-widest">
+            Tandoor Craft
+          </span>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-6 flex items-end justify-between z-10">
+<div class="space-y-1">
+<h3 class="text-headline-sm font-headline-sm text-surface-bright font-serif">Charcoal Tandoori</h3>
+<p class="text-caption font-caption text-surface-container">Signature kebabs kissed by open flame.</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center transform group-hover:scale-110 transition-transform shadow flex-shrink-0">
+<span class="material-symbols-outlined">zoom_in</span>
+</div>
+</div>
+</div>
+<!-- ITEM 5: Copper and Brass Tableware Details -->
+<div class="gallery-item lg:col-span-4 group relative rounded-xl overflow-hidden bg-primary-container shadow-md cursor-pointer" data-category="heritage" data-desc="Traditional hammered copper handis and engraved brass water jugs crafted by indigenous metalsmiths." data-tag="Heritage &amp; Details" data-title="Hand-Hammered Copper Tableware">
+<div class="relative h-[380px] w-full overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Close up table setting featuring hand-hammered traditional Indian copper serving bowls, brass water jug, cloth napkins, and vintage flatware resting on dark polished wood." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA61vIkNeJ9Q7fgxyNtW2r817VZfe3lCP19LplRSRGlPnfqYzkl_XRgoodBLhvuCdhcyB9p_mVF2me8KuDOf4In3uHH6iPdFBLuoWiTwFePaX-qb6RqQe1rUlosVwWNpAtr7V5xCFxnlcEFolxYjMBLhZ-Fl6l6tvg0qLBnRlDukt925tK6xpAqoFe9p3_zXVHi7CKJ86h-LSg9VDeoS0xs00tfHHvBemhltPhhbQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+</div>
+<div class="absolute top-4 left-4 z-10">
+<span class="px-3 py-1 rounded-full bg-primary/80 backdrop-blur-md text-secondary-fixed text-label-eyebrow font-label-eyebrow uppercase tracking-widest">
+            Tablecraft
+          </span>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-6 flex items-end justify-between z-10">
+<div class="space-y-1">
+<h3 class="text-headline-sm font-headline-sm text-surface-bright font-serif">Handcrafted Brassware</h3>
+<p class="text-caption font-caption text-surface-container">Aesthetic heirlooms of royal Indian hospitality.</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center transform group-hover:scale-110 transition-transform shadow flex-shrink-0">
+<span class="material-symbols-outlined">zoom_in</span>
+</div>
+</div>
+</div>
+<!-- ITEM 6: Architectural Cantonment Facade -->
+<div class="gallery-item lg:col-span-4 group relative rounded-xl overflow-hidden bg-primary-container shadow-md cursor-pointer" data-category="heritage" data-desc="The iconic Cantonment street presence that has greeted travelers and food lovers through seasons of time." data-tag="Heritage &amp; Details" data-title="Pune Camp Architectural Facade">
+<div class="relative h-[380px] w-full overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Evening architectural facade of a storied restaurant in Pune Camp with warm glowing entrance lanterns, vintage wooden signage, and welcoming doorway." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD3r6kS3tYQwjmatXCMCajN5gUXWVZEmNE2IegW5TEYQem1YkjPawfhaicMD2qr0oQjx8oBBc33juKtGadjPFB0UyOEEyufMZQ2FBL0BhgpRmTtAxo15VPJpwf9AsJRPn7jy2cnbG-YtEdtMv6upOynwXvlvoPa7C0qyRS43Br4qENaYgYmp5hzoEBSmAL8zGyaYWa0z52ut4Z4LWZ8X8l20AgWVECqDY7WXVX_yQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+</div>
+<div class="absolute top-4 left-4 z-10">
+<span class="px-3 py-1 rounded-full bg-primary/80 backdrop-blur-md text-secondary-fixed text-label-eyebrow font-label-eyebrow uppercase tracking-widest">
+            Pune Camp Landmark
+          </span>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-6 flex items-end justify-between z-10">
+<div class="space-y-1">
+<h3 class="text-headline-sm font-headline-sm text-surface-bright font-serif">The Heritage Portal</h3>
+<p class="text-caption font-caption text-surface-container">A familiar beacon in the heart of Camp.</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center transform group-hover:scale-110 transition-transform shadow flex-shrink-0">
+<span class="material-symbols-outlined">zoom_in</span>
+</div>
+</div>
+</div>
+<!-- ITEM 7: Rich Mughlai Curries & Naan Bread Basket -->
+<div class="gallery-item lg:col-span-6 group relative rounded-xl overflow-hidden bg-primary-container shadow-md cursor-pointer" data-category="dishes" data-desc="Tandoor-blistered garlic naan layered with butter, paired with slow-simmered black lentils infused with spices." data-tag="Signature Dishes" data-title="Buttery Garlic Naan &amp; Dal Makhani">
+<div class="relative h-[380px] w-full overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Crispy hot garlic butter naans in a brass basket next to a copper bowl of creamy rich Dal Makhani with a swirl of fresh cream and melting butter." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCuaMoKYy8G3pqyNkciziNf0lc6ebEEBCwSnRhevWlf_QWydsVECN6GfgP9ajWzjBCEq8eS7B5s3B4_EqK_92xk7GJO2_J7MrQIl_1XVq9pucB8ph2NIOQWehXmZWg01bZVVxYmgN4J9BuCvDYeQfJsJMvxWjXhz-099lvWFFSt3goQWFo-C8ncTWwxFVrO5fIB7uPQ502WNf-OmRINgqceOJ8dZw__b5GmFgyPQw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+</div>
+<div class="absolute top-4 left-4 z-10">
+<span class="px-3 py-1 rounded-full bg-primary/80 backdrop-blur-md text-secondary-fixed text-label-eyebrow font-label-eyebrow uppercase tracking-widest">
+            Bread &amp; Curries
+          </span>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-6 flex items-end justify-between z-10">
+<div class="space-y-1">
+<h3 class="text-headline-md font-headline-md text-surface-bright font-serif">Tandoori Breads &amp; Gravies</h3>
+<p class="text-body-md font-body-md text-surface-container font-light">Freshly baked in our clay tandoor for authentic texture.</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center transform group-hover:scale-110 transition-transform shadow flex-shrink-0">
+<span class="material-symbols-outlined">zoom_in</span>
+</div>
+</div>
+</div>
+<!-- ITEM 8: Cozy Family Mezzanine Room -->
+<div class="gallery-item lg:col-span-6 group relative rounded-xl overflow-hidden bg-primary-container shadow-md cursor-pointer" data-category="family" data-desc="Air-conditioned family dining area thoughtfully designed for private gatherings and peaceful celebratory dinners." data-tag="Family Dining" data-title="Private Family Enclave">
+<div class="relative h-[380px] w-full overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Spacious clean family dining room with sage green accent walls, wood paneled accents, polished chairs, and cozy tables arranged for large group gatherings." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDAJB7qd5dZGdVKjCRbuWJFi_N6nxX1NO69ULyCBgq53v2p3mOkxVDNB4LUY1dvPREbnAM2czP0AzrNnDQOj0J6Z2NHPlyOsQ9mxDZQPAqLPnyQcOk5EGOoLWsEPE653nFEFArG3EMwZYNWBEezj76bwRVzr8HlzBWCe8v764AvwV1z0mOrgCK_XcARMd8aI6JS4j4mMxbWMk-NJp921r8Ek-wUKFXnFsYq0UUhzA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+</div>
+<div class="absolute top-4 left-4 z-10">
+<span class="px-3 py-1 rounded-full bg-primary/80 backdrop-blur-md text-secondary-fixed text-label-eyebrow font-label-eyebrow uppercase tracking-widest">
+            Family Enclave
+          </span>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-6 flex items-end justify-between z-10">
+<div class="space-y-1">
+<h3 class="text-headline-md font-headline-md text-surface-bright font-serif">Family Dining Haven</h3>
+<p class="text-body-md font-body-md text-surface-container font-light">Dedicated spacious tables with courteous service staff.</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center transform group-hover:scale-110 transition-transform shadow flex-shrink-0">
+<span class="material-symbols-outlined">zoom_in</span>
+</div>
+</div>
+</div>
+<!-- ITEM 9: Warm Wooden Wall Paneling & Lighting Fixtures -->
+<div class="gallery-item lg:col-span-4 group relative rounded-xl overflow-hidden bg-primary-container shadow-md cursor-pointer" data-category="interiors" data-desc="Muted incandescent sconces reflecting on polished Burma teak paneling and exposed brick wall accents." data-tag="Restaurant Interiors" data-title="Warm Architectural Accents">
+<div class="relative h-[360px] w-full overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Interior architectural detail of brass wall sconces, wood paneling, warm incandescent lighting, and cozy corner seating at Agra Hotel Pune Camp." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8zImSdIl0SP72HJP-tGSgHm-_0O5Zq5L-UlI75iS7G9qJRIDuznLizXX0g2UGCxJ4zAS6Znc8MCf6Rslz-rge6pVvha-Um2Tcu4uwRx7Egm4IBrAkG7RPH_u3n2MXF6QZ1Yb7QNWOBPA3C1TdKvXmZ394yOh8TmW0IKTd_4K-CKENsR2NrxDq-QHhtl6F-_rEZ1_owFUA8PFBBbd33TULZJhLASi6cPfNZHc_lg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+</div>
+<div class="absolute top-4 left-4 z-10">
+<span class="px-3 py-1 rounded-full bg-primary/80 backdrop-blur-md text-secondary-fixed text-label-eyebrow font-label-eyebrow uppercase tracking-widest">
+            Interior Details
+          </span>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-6 flex items-end justify-between z-10">
+<div class="space-y-1">
+<h3 class="text-headline-sm font-headline-sm text-surface-bright font-serif">Atmospheric Lighting</h3>
+<p class="text-caption font-caption text-surface-container">Gentle lighting designed for relaxed dining.</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center transform group-hover:scale-110 transition-transform shadow flex-shrink-0">
+<span class="material-symbols-outlined">zoom_in</span>
+</div>
+</div>
+</div>
+<!-- ITEM 10: Heritage Recipe Spice Box & Antique Mortar -->
+<div class="gallery-item lg:col-span-8 group relative rounded-xl overflow-hidden bg-primary-container shadow-md cursor-pointer" data-category="heritage" data-desc="Stone-ground cardamom pods, star anise, mace, and royal saffron that formulate our timeless Mughlai masala recipes." data-tag="Heritage &amp; Details" data-title="Secret Spice Blends of Agra">
+<div class="relative h-[360px] w-full overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Antique brass masala box filled with aromatic whole spices such as star anise, cinnamon sticks, dried chilies, and saffron filaments beside stone mortar." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxMxqrs4zY-ZOSpzYX09sSj6crGQ4df5FVHpCyMu8dyGWP0MxVvUV7xWik1XvoZEHkkspVbbgomg1dzcYoolxBKp0IDgJVnO3Udob4_dW6PcdVzZV116ae908IoxgMSSp3okYuJ5zctpfurHVAeam1bStfxf7EuK41Vf9zLtHu09RmxGCAtImCFwQHeIEUfUzKbIxgr7vPmwbWrp23M-2GQRICKkWfB1yYx2EcQg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+</div>
+<div class="absolute top-4 left-4 z-10">
+<span class="px-3 py-1 rounded-full bg-primary/80 backdrop-blur-md text-secondary-fixed text-label-eyebrow font-label-eyebrow uppercase tracking-widest">
+            Culinary Heritage
+          </span>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-6 sm:p-8 flex items-end justify-between z-10">
+<div class="space-y-1 max-w-md">
+<h3 class="text-headline-md font-headline-md text-surface-bright font-serif">Generational Spices</h3>
+<p class="text-body-md font-body-md text-surface-container font-light">
+              Crafted with authentic hand-pounded masalas passed down through decades.
+            </p>
+</div>
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+<span class="material-symbols-outlined text-title-lg">zoom_in</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- AMBIENCE HIGHLIGHT LEDGER / ARCHIVAL SPEC SHEET -->
+<section class="w-full bg-surface-container-low py-20" style="background: linear-gradient(rgb(236, 229, 216) 0%, rgb(226, 217, 200) 100%); border-top: 1px solid rgba(201, 164, 92, 0.25); border-bottom: 1px solid rgba(201, 164, 92, 0.25);">
+<div class="max-w-7xl mx-auto px-4 sm:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Visual Column -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-xl bg-primary">
+<div class="bg-cover bg-center w-full h-96 sm:h-[450px]" data-alt="Evening dining scene at Agra Hotel showing a rich feast served across a dark wooden table with copper handis, warm tea lights, and satisfied diners enjoying conversation." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCp6NVJZ_VOYYqr6A7PpMw4SJGF7pHrM7G4e76Azr3i741jmZHlJuaOpmUn1oSe6Da2-29eodGDt7MetSKiMbTGBx36GGxN369ezzGYnwoD-w7dtvB-LeYCL1onWUXnIcWjRp0ClBWNpwTGc6Qwlf7Ikp2TCY3eMPTnOEP0hWDPkozWFUjwaxsDwYEwoY6NUWhMptk02a4p3421iClCi89PeGwAvAzDwc1UmeEFng')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-60"></div>
+</div>
+<!-- Overlapping Heritage Chip -->
+<div class="absolute -bottom-6 -right-4 sm:right-6 bg-surface-bright rounded-xl p-5 shadow-xl max-w-xs border border-surface-variant/40" style="background-color: rgb(250, 244, 235); border: 1px solid rgba(201, 164, 92, 0.45); box-shadow: rgba(36, 24, 18, 0.15) 0px 10px 25px -5px;">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-headline-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div>
+<div class="text-title-lg font-title-lg text-on-surface">Pune Camp Tradition</div>
+<div class="text-caption font-caption text-on-surface-variant">Trusted since past decades</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Ledger Content Column -->
+<div class="lg:col-span-7 space-y-8">
+<div class="space-y-3">
+<span class="text-label-eyebrow font-label-eyebrow text-secondary uppercase tracking-widest">
+              The Dining Experience
+            </span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface font-serif">
+              Crafted for Comfort, Designed for Gathering
+            </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant font-light leading-relaxed">
+              Every corner of Agra Hotel is orchestrated to honor traditional North Indian and Mughlai hospitality. From unhurried table setups to spacious family seating, here is what makes your visit memorable:
+            </p>
+</div>
+<!-- Dotted Leader Architecture Ledger -->
+<div class="space-y-4 pt-2">
+<!-- Row 1 -->
+<div class="flex items-baseline justify-between gap-4">
+<span class="text-title-lg font-title-lg text-on-surface font-serif">Seating Configuration</span>
+<span class="flex-1 border-b border-dotted border-outline-variant mb-1"></span>
+<span class="text-body-md font-body-md text-secondary font-medium">Booth &amp; Family Halls</span>
+</div>
+<!-- Row 2 -->
+<div class="flex items-baseline justify-between gap-4">
+<span class="text-title-lg font-title-lg text-on-surface font-serif">Dining Temperature &amp; Comfort</span>
+<span class="flex-1 border-b border-dotted border-outline-variant mb-1"></span>
+<span class="text-body-md font-body-md text-secondary font-medium">Fully Air-Conditioned</span>
+</div>
+<!-- Row 3 -->
+<div class="flex items-baseline justify-between gap-4">
+<span class="text-title-lg font-title-lg text-on-surface font-serif">Culinary Style</span>
+<span class="flex-1 border-b border-dotted border-outline-variant mb-1"></span>
+<span class="text-body-md font-body-md text-secondary font-medium">Mughlai, Biryani &amp; Tandoor</span>
+</div>
+<!-- Row 4 -->
+<div class="flex items-baseline justify-between gap-4">
+<span class="text-title-lg font-title-lg text-on-surface font-serif">Serving Tradition</span>
+<span class="flex-1 border-b border-dotted border-outline-variant mb-1"></span>
+<span class="text-body-md font-body-md text-secondary font-medium">Copper Handi &amp; Sizzler Platters</span>
+</div>
+<!-- Row 5 -->
+<div class="flex items-baseline justify-between gap-4">
+<span class="text-title-lg font-title-lg text-on-surface font-serif">Ideal For</span>
+<span class="flex-1 border-b border-dotted border-outline-variant mb-1"></span>
+<span class="text-body-md font-body-md text-secondary font-medium">Large Families, Couples, Friends</span>
+</div>
+</div>
+<!-- Operating Callout Card -->
+<div class="bg-surface-bright rounded-xl p-6 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-6" style="background-color: rgb(250, 244, 235); border: 1px solid rgba(201, 164, 92, 0.35); box-shadow: rgba(36, 24, 18, 0.1) 0px 8px 20px -4px;">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-headline-sm">schedule</span>
+</div>
+<div>
+<div class="text-title-lg font-title-lg text-on-surface font-semibold">Open 7 Days a Week</div>
+<div class="text-body-md font-body-md text-on-surface-variant">10:00 AM – 11:00 PM • Pune Camp</div>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-surface-bright text-label-button font-label-button hover:bg-primary-container transition-all shadow" href="tel:+919876543210">
+<span class="material-symbols-outlined text-body-lg">call</span>
+<span class="">Reserve via Call</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BOTTOM CALL-TO-ACTION SECTION -->
+<section class="relative w-full bg-primary-container text-surface-bright py-24 overflow-hidden">
+<!-- Rich Background Radial -->
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary-container to-primary pointer-events-none"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[48rem] h-[48rem] bg-secondary-container/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-8 text-center space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-tertiary-container text-secondary-fixed text-label-eyebrow font-label-eyebrow uppercase tracking-widest shadow">
+<span class="material-symbols-outlined text-body-md">dinner_dining</span>
+<span class="">A Seat Awaits You in Pune Camp</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-surface-bright font-serif leading-tight">
+        Ready to Experience It in Person?
+      </h2>
+<p class="text-body-lg font-body-lg text-surface-container font-light max-w-2xl mx-auto leading-relaxed">
+        Whether you are planning a grand family feast, an intimate dinner, or a quick lunch of fragrant dum biryani, we welcome you to our table.
+      </p>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-secondary-fixed text-on-secondary-fixed text-label-button font-label-button hover:bg-secondary-fixed-dim transition-all shadow-lg transform hover:-translate-y-0.5" href="#reservations">
+<span class="material-symbols-outlined">table_restaurant</span>
+<span class="">Reserve a Table</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-surface-bright/10 hover:bg-surface-bright/20 text-surface-bright text-label-button font-label-button backdrop-blur-md transition-all shadow" href="#specialties">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="">View Full Menu</span>
+</a>
+</div>
+<!-- Quick Trust Indicators -->
+<div class="flex items-center justify-center gap-8 pt-8 text-caption font-caption text-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-body-md">child_care</span>
+<span class="">Family &amp; Kid Friendly</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-body-md">local_parking</span>
+<span class="">Ample Camp Parking</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-body-md">local_fire_department</span>
+<span class="">Live Tandoor Charcoal</span>
+</div>
+</div>
+</div>
+</section>
+<!-- LIGHTBOX MODAL DIALOG -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-8 bg-primary/90 backdrop-blur-md transition-opacity duration-300" id="lightbox-modal">
+<div class="relative max-w-5xl w-full bg-primary-container rounded-2xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
+<!-- Close Button -->
+<button aria-label="Close Lightbox" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-primary/80 hover:bg-primary text-surface-bright flex items-center justify-center transition-all shadow" id="lightbox-close">
+<span class="material-symbols-outlined text-headline-sm">close</span>
+</button>
+<!-- Lightbox Media Area -->
+<div class="relative w-full h-[55vh] sm:h-[65vh] bg-primary flex items-center justify-center overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-all duration-300" id="lightbox-image"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+</div>
+<!-- Lightbox Meta Footer -->
+<div class="p-6 sm:p-8 bg-primary-container text-surface-bright flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary text-surface-bright text-label-eyebrow font-label-eyebrow uppercase" id="lightbox-tag">Category</span>
+<span class="text-caption font-caption text-surface-container font-light">Agra Hotel Pune Camp Archive</span>
+</div>
+<h4 class="text-headline-md font-headline-md text-surface-bright font-serif" id="lightbox-title">Photo Title</h4>
+<p class="text-body-md font-body-md text-surface-container font-light max-w-2xl" id="lightbox-desc">Description here.</p>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<a class="w-full sm:w-auto text-center px-5 py-2.5 rounded-lg bg-secondary-fixed text-on-secondary-fixed text-label-button font-label-button hover:bg-secondary-fixed-dim transition-all shadow" href="#reservations">
+            Book Table
+          </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive Gallery Filter & Lightbox Vanilla Script
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.gallery-filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const galleryCount = document.getElementById('gallery-count');
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxDesc = document.getElementById('lightbox-desc');
+    const lightboxTag = document.getElementById('lightbox-tag');
+
+    // Filter Logic
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        // Style active state
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'shadow');
+          b.classList.add('bg-surface-container', 'text-on-surface');
+        });
+        btn.classList.add('bg-primary', 'text-on-primary', 'shadow');
+        btn.classList.remove('bg-surface-container', 'text-on-surface');
+
+        let visibleCount = 0;
+        galleryItems.forEach(item => {
+          const category = item.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            item.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+
+        if (galleryCount) {
+          galleryCount.textContent = `Displaying ${visibleCount} curated archival ${visibleCount === 1 ? 'view' : 'views'}`;
+        }
+      });
+    });
+
+    // Lightbox Logic
+    galleryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const title = item.getAttribute('data-title');
+        const desc = item.getAttribute('data-desc');
+        const tag = item.getAttribute('data-tag');
+        const imgDiv = item.querySelector('[style*="background-image"]');
+        const bgStyle = imgDiv ? imgDiv.getAttribute('style') : '';
+
+        lightboxTitle.textContent = title;
+        lightboxDesc.textContent = desc;
+        lightboxTag.textContent = tag;
+        if (bgStyle) {
+          lightboxImage.setAttribute('style', bgStyle);
+        }
+
+        lightboxModal.classList.remove('hidden');
+        lightboxModal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    const closeLightbox = () => {
+      lightboxModal.classList.add('hidden');
+      lightboxModal.classList.remove('flex');
+      document.body.style.overflow = '';
+    };
+
+    if (lightboxClose) {
+      lightboxClose.addEventListener('click', closeLightbox);
+    }
+
+    if (lightboxModal) {
+      lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal) {
+          closeLightbox();
+        }
+      });
+    }
+
+    // Escape Key Support
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !lightboxModal.classList.contains('hidden')) {
+        closeLightbox();
+      }
+    });
+  });
+</script></main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-brand-walnut text-stone-300 pt-16 pb-12 px-4 sm:px-8 border-t border-brand-gold/20" data-purpose="site-footer" id="contact">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+<!-- Brand Summary -->
+<div class="lg:col-span-5 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 border border-brand-gold/60 rounded-t-full flex items-center justify-center p-1.5">
+<svg class="w-full h-full text-brand-gold" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+<path d="M3 21h18M5 21V9a7 7 0 0 1 14 0v12M9 21V11a3 3 0 0 1 6 0v10"></path>
+</svg>
+</div>
+<div>
+<span class="font-serif tracking-widest text-lg font-bold uppercase text-white block">Agra Hotel</span>
+<span class="text-[9px] uppercase tracking-widest-plus text-brand-gold">Pune Camp</span>
+</div>
+</div>
+<p class="text-xs sm:text-sm text-stone-400 font-light leading-relaxed max-w-sm">
+            Pune Camp’s treasured address for authentic heritage culinary experiences, rich Mughlai delicacies, and welcoming family memories.
+          </p>
+</div>
+<!-- Quick Navigation -->
+<div class="lg:col-span-3 space-y-3">
+<h4 class="text-xs font-bold text-white uppercase tracking-widest">Navigation</h4>
+<ul class="space-y-2 text-xs sm:text-sm font-light">
+<li class=""><a class="hover:text-brand-gold transition-colors" href="#hero">Home &amp; Heritage</a></li>
+<li class=""><a class="hover:text-brand-gold transition-colors" href="#story">Our Story</a></li>
+<li class=""><a class="hover:text-brand-gold transition-colors" href="#specialties">Specialty Menu</a></li>
+<li class=""><a class="hover:text-brand-gold transition-colors" href="#experience">Dining Ambience</a></li>
+<li class=""><a class="hover:text-brand-gold transition-colors" href="#reservations">Book a Table</a></li>
+</ul>
+</div>
+<!-- Contact & Working Hours -->
+<div class="lg:col-span-4 space-y-3">
+<h4 class="text-xs font-bold text-white uppercase tracking-widest">Contact &amp; Timings</h4>
+<p class="text-xs sm:text-sm text-stone-400 font-light">
+            Camp Road, Near Main Cantonment Market,<br>
+            Pune Camp, Pune, Maharashtra 411001
+          </p>
+<div class="pt-2 text-xs sm:text-sm">
+<span class="text-brand-gold block font-medium">Daily Service:</span>
+<span class="text-stone-300">10:00 AM – 11:00 PM (Monday to Sunday)</span>
+</div>
+<div class="pt-1">
+<a class="text-brand-gold font-semibold text-sm hover:underline" href="tel:+919876543210">+91 98765 43210</a>
+</div>
+</div>
+</div>
+<!-- Copyright & Credential Row -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+<p class="">© <span id="current-year" class="">2026</span> Agra Hotel – Pune Camp. All rights reserved.</p>
+<p class="tracking-wide">Designed for Timeless Dining in Pune</p>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: InteractiveScripts -->
+<!-- Navigation Scroll Behavior & Modal Handling -->
+<script data-purpose="header-scroll-and-interactions">
+    document.addEventListener('DOMContentLoaded', () => {
+      // Dynamic Year
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+
+      // Header Scroll Background Transition
+      const header = document.getElementById('main-header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+          header.classList.add('bg-brand-walnut-dark/95', 'backdrop-blur-md', 'shadow-lg', 'py-3');
+          header.classList.remove('bg-transparent', 'py-4');
+        } else {
+          header.classList.remove('bg-brand-walnut-dark/95', 'backdrop-blur-md', 'shadow-lg', 'py-3');
+          header.classList.add('bg-transparent', 'py-4');
+        }
+      });
+
+      // Mobile Menu Toggle
+      const mobileToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          mobileMenu.classList.toggle('flex');
+        });
+      }
+    });
+  </script>
+<!-- END: InteractiveScripts -->
+
+
+</body></html>

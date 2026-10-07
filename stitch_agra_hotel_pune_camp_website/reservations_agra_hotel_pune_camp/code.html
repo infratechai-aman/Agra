@@ -1,0 +1,803 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agra Hotel – Pune Camp | Traditional Taste of Pune</title>
+<meta content="Experience authentic Mughlai, North Indian and Biryani cuisine at Agra Hotel, Pune Camp. Traditional taste, warm hospitality, and timeless heritage." name="description">
+<!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#C9A45C',
+              'gold-hover': '#b59146',
+              'gold-light': '#E8D7B0',
+              walnut: '#241812',
+              'walnut-dark': '#18100C',
+              'walnut-light': '#36241B',
+              olive: '#2E3321',
+              'olive-dark': '#232719',
+              cream: '#FAF8F3',
+              sand: '#F3EFE6',
+              parchment: '#EBE5D8'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          letterSpacing: {
+            'widest-plus': '.25em',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Typography & Base Styling -->
+<style data-purpose="typography-and-base">
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background-color: #FAF8F3;
+      color: #241812;
+      overflow-x: hidden;
+    }
+    .font-serif {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    ::selection {
+      background-color: #C9A45C;
+      color: #18100C;
+    }
+  </style>
+<!-- Custom Decorative & Layout Styles -->
+<style data-purpose="layout-and-decorative">
+    /* Subtle parchment textured overlay simulation */
+    .bg-parchment-pattern {
+      background-color: #FAF8F3;
+      background-image: radial-gradient(#241812 0.45px, transparent 0.45px);
+      background-size: 24px 24px;
+      opacity: 0.98;
+    }
+    .gold-glow {
+      box-shadow: 0 10px 30px -10px rgba(201, 164, 92, 0.35);
+    }
+    /* Elegant line separator */
+    .gold-divider {
+      background: linear-gradient(90deg, transparent, #C9A45C, transparent);
+      height: 1px;
+    }
+  </style>
+<meta content="web_standard" name="shell-type"></head>
+<body class="antialiased selection:bg-brand-gold selection:text-brand-walnut-dark">
+<!-- BEGIN: NavigationBar -->
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-4 sm:px-8 bg-transparent" data-purpose="site-navigation" id="main-header">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<!-- Brand Logo Lockup with Historic Arch Mark -->
+<a class="flex items-center gap-3 group text-decoration-none" href="#hero">
+<div class="w-10 h-10 border border-brand-gold/60 rounded-t-full flex items-center justify-center p-1.5 transition-transform group-hover:scale-105">
+<svg class="w-full h-full text-brand-gold" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24">
+<path d="M3 21h18M5 21V9a7 7 0 0 1 14 0v12M9 21V11a3 3 0 0 1 6 0v10"></path>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="font-serif tracking-widest text-lg sm:text-xl font-bold uppercase text-white drop-shadow-sm group-hover:text-brand-gold transition-colors">Agra Hotel</span>
+<span class="text-[9px] uppercase tracking-widest-plus text-brand-gold font-medium">Pune Camp</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-white/90">
+<a class="hover:text-brand-gold transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all" href="#hero">Home</a>
+<a class="hover:text-brand-gold transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all" href="#story">About</a>
+<a class="hover:text-brand-gold transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all" href="#specialties">Menu</a>
+<a class="hover:text-brand-gold transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all" href="#experience">Gallery</a>
+<a class="hover:text-brand-gold transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all" href="#reservations">Reservations</a>
+<a class="hover:text-brand-gold transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all" href="#contact">Contact</a>
+</nav>
+<!-- CTA Contact Pill -->
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-gold hover:bg-brand-gold-hover text-brand-walnut-dark font-semibold text-xs sm:text-sm tracking-wider uppercase transition-all shadow-md transform hover:-translate-y-0.5" data-purpose="primary-call-cta" href="tel:+919876543210">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="">Call Now</span>
+</a>
+<!-- Mobile Menu Toggle Button -->
+<button aria-label="Toggle Navigation Menu" class="md:hidden text-white p-2 focus:outline-none" id="mobile-menu-toggle" type="button">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+<!-- Mobile Dropdown Navigation -->
+<div class="hidden md:hidden bg-brand-walnut/95 backdrop-blur-md mt-3 rounded-2xl p-6 border border-brand-gold/20 flex-col gap-4 text-center" id="mobile-menu">
+<a class="text-white hover:text-brand-gold text-base py-1" href="#hero">Home</a>
+<a class="text-white hover:text-brand-gold text-base py-1" href="#story">About</a>
+<a class="text-white hover:text-brand-gold text-base py-1" href="#specialties">Menu</a>
+<a class="text-white hover:text-brand-gold text-base py-1" href="#experience">Gallery</a>
+<a class="text-white hover:text-brand-gold text-base py-1" href="#reservations">Reservations</a>
+<a class="text-white hover:text-brand-gold text-base py-1" href="#contact">Contact</a>
+</div>
+</header>
+<!-- END: NavigationBar -->
+<main><div class="flex flex-col w-full">
+<!-- Top Atmospheric Header Clearance & Breadcrumb Bar -->
+<div class="w-full bg-primary-container text-surface-container-high py-6 px-4 sm:px-8 -mt-20 pt-28 shadow-xl relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container via-surface-variant/10 to-primary-container opacity-40 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4 relative z-10">
+<div class="flex items-center gap-2">
+<span class="text-caption font-caption text-secondary-fixed uppercase tracking-widest-plus">Agra Hotel</span>
+<span class="text-caption font-caption text-secondary-fixed/50">/</span>
+<span class="text-caption font-caption text-surface-container-high tracking-widest">Pune Camp</span>
+<span class="text-caption font-caption text-secondary-fixed/50">/</span>
+<span class="text-caption font-caption text-surface-bright font-medium">Reservations</span>
+</div>
+<div class="flex items-center gap-6 text-caption font-caption text-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-base">call</span>
+<span class="">Inquiries: <strong class="text-surface-bright font-title-lg text-body-md">+91 98765 43210</strong></span>
+</div>
+<div class="hidden sm:flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-base">schedule</span>
+<span class="">Lunch &amp; Dinner: 11:00 AM – 11:00 PM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Header Showcase Section -->
+<section class="relative bg-surface-container-low py-16 sm:py-20 px-4 sm:px-8 overflow-hidden border-b border-brand-gold/20">
+<!-- Decorative Ambient Glow & Background Tone -->
+<div class="absolute -top-32 right-0 w-96 h-96 bg-secondary-fixed-dim/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 left-10 w-80 h-80 bg-tertiary-fixed/30 rounded-full blur-2xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Text & Headline Column -->
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-primary-container text-secondary-fixed shadow-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<span class="text-label-eyebrow font-label-eyebrow uppercase tracking-widest-plus">EXPERIENCE TRADITIONAL HOSPITALITY</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-none">
+            Reserve Your <span class="italic font-normal text-secondary">Table</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+            Whether it’s a treasured family celebration, an intimate candlelight dinner, or a hearty group feast in historic Pune Camp, our hearth and hospitality await you.
+          </p>
+<div class="flex flex-wrap items-center gap-6 pt-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">table_restaurant</span>
+</div>
+<div>
+<span class="block font-title-lg text-body-md text-on-surface font-semibold">Instant Guarantee</span>
+<span class="block font-caption text-caption text-on-surface-variant">Real-time confirmation</span>
+</div>
+</div>
+<div class="w-px h-8 bg-outline-variant hidden sm:block"></div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">family_restroom</span>
+</div>
+<div>
+<span class="block font-title-lg text-body-md text-on-surface font-semibold">Family Hall &amp; Booths</span>
+<span class="block font-caption text-caption text-on-surface-variant">Dedicated AC dining suites</span>
+</div>
+</div>
+<div class="w-px h-8 bg-outline-variant hidden sm:block"></div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">lock_clock</span>
+</div>
+<div>
+<span class="block font-title-lg text-body-md text-on-surface font-semibold">15-Min Courtesy</span>
+<span class="block font-caption text-caption text-on-surface-variant">Priority table hold</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Atmospheric Photo Vignette -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-xl overflow-hidden shadow-xl aspect-[4/3] bg-primary-container group border border-brand-gold/20">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Warm welcoming indoor dining room of Agra Hotel Pune Camp with dark wood dining booths, white table linen, antique brass chandeliers, and smiling families savoring traditional Mughlai food in a vintage colonial setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBAeIyZmjQvD3M1NBjWZ03Ba8reGctD5zPOUMz7_eLpDWK8-qAUJMjyd2bZYrREzfFqmpAShR1W3y3gE2G00RBc9aRsvpPBgqRA42vB9GWWD_uiCGzoE-GjmCm43udf9oQQ5_TqIdtUA8Xk-pLTmv_hEozJkEb1NtGFBzx-fbvYhUukTaX6leN_FLwUqmuUQ1PrWWkEqzLD8-VWKSG4LYVnvwMcz_Cazrll6RfHlA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 bg-primary-container/90 backdrop-blur-md p-4 rounded-lg flex items-center justify-between text-on-primary">
+<div>
+<p class="font-title-lg text-body-md font-semibold text-surface-bright">The Walnut Dining Chamber</p>
+<p class="font-caption text-caption text-surface-variant">Restored Cantonment ambiance with acoustic comfort</p>
+</div>
+<span class="px-2.5 py-1 rounded bg-secondary-fixed text-primary-container font-label-eyebrow text-label-eyebrow uppercase">Since 1982</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Booking Workspace & Dining Policy Split -->
+<section class="w-full bg-background py-12 sm:py-16 px-4 sm:px-8">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+<!-- LEFT COLUMN: The Interactive Reservation Module -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-6 sm:p-10 shadow-md border border-brand-gold/20">
+<div class="flex items-center justify-between pb-6 mb-8 bg-surface-container-low -mx-6 -mt-6 sm:-mx-10 sm:-mt-10 p-6 sm:p-10 rounded-t-xl border-b border-brand-gold/20">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest-plus text-secondary font-bold">Step-by-Step Booking</span>
+<h2 class="font-headline-md text-headline-md text-on-surface pt-1">Table Reservation Form</h2>
+</div>
+<div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant text-caption font-caption">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+              Live Availability
+            </div>
+</div>
+<form class="space-y-8" id="reservation-form" onsubmit="event.preventDefault(); handleBookingSubmission();">
+<!-- Step 1: Party Size Selection -->
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<label class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-surface-bright flex items-center justify-center text-xs font-semibold">1</span>
+                  Select Number of Guests
+                </label>
+<span class="font-caption text-caption text-on-surface-variant" id="selected-guests-label">4 Guests Selected</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Choose your dining party size. For private hall bookings over 12 guests, contact our events desk.</p>
+<!-- Guest Picker Pill Buttons -->
+<div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-9 gap-2 pt-2" id="guest-selector-group">
+<button class="guest-btn py-2.5 rounded-lg font-label-button text-label-button text-center bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" onclick="selectGuests(1)" type="button">1</button>
+<button class="guest-btn py-2.5 rounded-lg font-label-button text-label-button text-center bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" onclick="selectGuests(2)" type="button">2</button>
+<button class="guest-btn py-2.5 rounded-lg font-label-button text-label-button text-center bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" onclick="selectGuests(3)" type="button">3</button>
+<button class="guest-btn active-guest-pill py-2.5 rounded-lg font-label-button text-label-button text-center bg-primary-container text-surface-bright shadow-sm transition-all" onclick="selectGuests(4)" type="button">4</button>
+<button class="guest-btn py-2.5 rounded-lg font-label-button text-label-button text-center bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" onclick="selectGuests(5)" type="button">5</button>
+<button class="guest-btn py-2.5 rounded-lg font-label-button text-label-button text-center bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" onclick="selectGuests(6)" type="button">6</button>
+<button class="guest-btn py-2.5 rounded-lg font-label-button text-label-button text-center bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" onclick="selectGuests(7)" type="button">7</button>
+<button class="guest-btn py-2.5 rounded-lg font-label-button text-label-button text-center bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" onclick="selectGuests(8)" type="button">8</button>
+<button class="guest-btn py-2.5 rounded-lg font-label-button text-label-button text-center bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" onclick="selectGuests('10+')" type="button">10+</button>
+</div>
+<input id="party_size_input" name="party_size" type="hidden" value="4">
+</div>
+<!-- Step 2: Date & Dining Session -->
+<div class="space-y-4 pt-4">
+<label class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-surface-bright flex items-center justify-center text-xs font-semibold">2</span>
+                Date &amp; Meal Period
+              </label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<span class="font-caption text-caption text-on-surface-variant font-medium block">Dining Date</span>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-secondary text-lg pointer-events-none">calendar_month</span>
+<input class="w-full pl-11 pr-4 py-3 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 outline-none transition-all" id="booking_date" min="2025-05-01" required="" type="date" value="2025-05-18">
+</div>
+</div>
+<div class="space-y-1.5">
+<span class="font-caption text-caption text-on-surface-variant font-medium block">Service Preference</span>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-3 px-3 rounded-lg font-label-button text-label-button text-center bg-secondary text-on-secondary shadow-sm transition-all flex items-center justify-center gap-1.5" id="service-lunch" onclick="selectService('lunch')" type="button">
+<span class="material-symbols-outlined text-sm">light_mode</span> Lunch
+                    </button>
+<button class="py-3 px-3 rounded-lg font-label-button text-label-button text-center bg-surface-container-low hover:bg-surface-container text-on-surface transition-all flex items-center justify-center gap-1.5" id="service-dinner" onclick="selectService('dinner')" type="button">
+<span class="material-symbols-outlined text-sm">dark_mode</span> Dinner
+                    </button>
+</div>
+</div>
+</div>
+<!-- Time Slots Grid -->
+<div class="space-y-2 pt-2">
+<span class="font-caption text-caption text-on-surface-variant font-medium block" id="time-slot-heading">Available Lunch Slots (12:00 PM – 3:30 PM)</span>
+<div class="grid grid-cols-3 sm:grid-cols-6 gap-2" id="time-slots-container">
+<button class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-surface-container-low hover:bg-surface-container text-on-surface transition-all" onclick="selectTime(this, '12:00 PM')" type="button">12:00 PM</button>
+<button class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-primary-container text-on-primary font-semibold shadow-sm transition-all" onclick="selectTime(this, '12:45 PM')" type="button">12:45 PM</button>
+<button class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-surface-container-low hover:bg-surface-container text-on-surface transition-all" onclick="selectTime(this, '01:30 PM')" type="button">01:30 PM</button>
+<button class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-surface-container-low hover:bg-surface-container text-on-surface transition-all" onclick="selectTime(this, '02:15 PM')" type="button">02:15 PM</button>
+<button class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-surface-container-low hover:bg-surface-container text-on-surface transition-all" onclick="selectTime(this, '03:00 PM')" type="button">03:00 PM</button>
+<button class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-surface-container-low hover:bg-surface-container text-on-surface transition-all" onclick="selectTime(this, '03:30 PM')" type="button">03:30 PM</button>
+</div>
+<input id="selected_time_slot" name="time_slot" type="hidden" value="12:45 PM">
+</div>
+</div>
+<!-- Step 3: Seating Ambiance Preference -->
+<div class="space-y-3 pt-4">
+<label class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-surface-bright flex items-center justify-center text-xs font-semibold">3</span>
+                Seating Section Preference
+              </label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<!-- Seating Card 1 -->
+<label class="cursor-pointer group relative flex flex-col p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all has-[:checked]:bg-secondary/10 has-[:checked]:shadow-md border border-brand-gold/20">
+<div class="flex items-center justify-between mb-2">
+<span class="material-symbols-outlined text-secondary text-2xl">chair</span>
+<input checked="" class="text-secondary focus:ring-secondary w-4 h-4" name="seating_preference" type="radio" value="Cozy Wooden Booth">
+</div>
+<strong class="font-title-lg text-body-md text-on-surface font-semibold group-hover:text-secondary">Cozy Wood Booth</strong>
+<p class="font-caption text-caption text-on-surface-variant mt-1 leading-normal">Intimate high-backed walnut partition booths with amber lighting.</p>
+</label>
+<!-- Seating Card 2 -->
+<label class="cursor-pointer group relative flex flex-col p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all has-[:checked]:bg-secondary/10 has-[:checked]:shadow-md border border-brand-gold/20">
+<div class="flex items-center justify-between mb-2">
+<span class="material-symbols-outlined text-secondary text-2xl">family_restroom</span>
+<input class="text-secondary focus:ring-secondary w-4 h-4" name="seating_preference" type="radio" value="Family Hall (AC)">
+</div>
+<strong class="font-title-lg text-body-md text-on-surface font-semibold group-hover:text-secondary">Family Hall (AC)</strong>
+<p class="font-caption text-caption text-on-surface-variant mt-1 leading-normal">Quiet air-conditioned section ideal for gatherings with children and elders.</p>
+</label>
+<!-- Seating Card 3 -->
+<label class="cursor-pointer group relative flex flex-col p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all has-[:checked]:bg-secondary/10 has-[:checked]:shadow-md border border-brand-gold/20">
+<div class="flex items-center justify-between mb-2">
+<span class="material-symbols-outlined text-secondary text-2xl">groups</span>
+<input class="text-secondary focus:ring-secondary w-4 h-4" name="seating_preference" type="radio" value="Banquet &amp; Long Table">
+</div>
+<strong class="font-title-lg text-body-md text-on-surface font-semibold group-hover:text-secondary">Banquet Long Table</strong>
+<p class="font-caption text-caption text-on-surface-variant mt-1 leading-normal">Spacious combined setting suited for large family groups and reunions.</p>
+</label>
+</div>
+</div>
+<!-- Step 4: Contact & Guest Details -->
+<div class="space-y-4 pt-4">
+<label class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-surface-bright flex items-center justify-center text-xs font-semibold">4</span>
+                Primary Contact Details
+              </label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<span class="font-caption text-caption text-on-surface-variant font-medium block">Full Name *</span>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-lg pointer-events-none">person</span>
+<input class="w-full pl-11 pr-4 py-3 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 outline-none transition-all placeholder:text-outline/70" placeholder="e.g. Rajesh Kulkarni" required="" type="text">
+</div>
+</div>
+<div class="space-y-1.5">
+<span class="font-caption text-caption text-on-surface-variant font-medium block">Phone Number (+91) *</span>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-lg pointer-events-none">call</span>
+<input class="w-full pl-11 pr-4 py-3 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 outline-none transition-all placeholder:text-outline/70" placeholder="98220 12345" required="" type="tel">
+</div>
+</div>
+<div class="space-y-1.5 sm:col-span-2">
+<span class="font-caption text-caption text-on-surface-variant font-medium block">Email Address (for receipt &amp; calendar invite)</span>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-lg pointer-events-none">mail</span>
+<input class="w-full pl-11 pr-4 py-3 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 outline-none transition-all placeholder:text-outline/70" placeholder="rajesh@example.com" type="email">
+</div>
+</div>
+<div class="space-y-1.5 sm:col-span-2">
+<span class="font-caption text-caption text-on-surface-variant font-medium block">Dining Notes &amp; Special Requests (Optional)</span>
+<div class="relative">
+<textarea class="w-full p-3.5 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 outline-none transition-all placeholder:text-outline/70" placeholder="Celebrating an anniversary, wheelchair access required, baby high-chair needed, spicy or mild seasoning preferences..." rows="3"></textarea>
+</div>
+</div>
+</div>
+</div>
+<!-- Submission Row with High-contrast CTA -->
+<div class="pt-6 space-y-4">
+<button class="w-full py-4 px-8 rounded-lg bg-secondary hover:bg-secondary-fixed-dim text-on-secondary font-label-button text-title-lg tracking-wider uppercase transition-all shadow-lg transform hover:-translate-y-0.5 flex items-center justify-center gap-3" type="submit">
+<span class="">Confirm Reservation Request</span>
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+<div class="flex items-center justify-center gap-2 text-caption font-caption text-on-surface-variant text-center">
+<span class="material-symbols-outlined text-sm text-secondary">verified_user</span>
+<span class="">No cancellation fees. We confirm by SMS &amp; WhatsApp within 15 minutes.</span>
+</div>
+</div>
+<!-- Interactive Feedback Toast Placeholder -->
+<div class="hidden p-5 rounded-lg bg-tertiary-container text-on-tertiary space-y-1 transition-all" id="booking-confirmation-alert">
+<div class="flex items-center gap-2 font-title-lg text-body-md font-semibold text-secondary-fixed">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+                Reservation Request Recorded!
+              </div>
+<p class="font-body-md text-body-md text-tertiary-fixed">
+                Thank you! Our Pune Camp reservations manager will verify booth readiness and message your phone shortly.
+              </p>
+</div>
+</form>
+</div>
+<!-- RIGHT COLUMN: Dining Information, Guidelines & Pune Camp Location -->
+<div class="lg:col-span-5 space-y-6">
+<!-- Card 1: Dining Policies & Guest Etiquette -->
+<div class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 shadow-sm space-y-5 border border-brand-gold/20">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl">policy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Dining Policies</h3>
+</div>
+<div class="space-y-4 text-on-surface-variant font-body-md text-body-md">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5 shrink-0">timer</span>
+<div>
+<strong class="text-on-surface font-title-lg text-body-md block font-semibold">15-Minute Courtesy Hold</strong>
+<span class="">Tables are cheerfully held for up to 15 minutes past your reserved booking time before being released to walk-in patrons.</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5 shrink-0">door_front</span>
+<div>
+<strong class="text-on-surface font-title-lg text-body-md block font-semibold">Walk-Ins Always Welcomed</strong>
+<span class="">We retain 30% of our dining floor for spontaneous Cantonment strolls and walk-in diners every evening. Advance bookings are recommended on weekends.</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5 shrink-0">ac_unit</span>
+<div>
+<strong class="text-on-surface font-title-lg text-body-md block font-semibold">Dedicated AC Family Hall</strong>
+<span class="">Families with young children and multi-generation gatherings enjoy our chilled, tranquil dining room with dedicated staff assistance.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: Private Dining & Group Celebrations -->
+<div class="bg-primary-container text-on-primary rounded-xl p-6 sm:p-8 shadow-md relative overflow-hidden">
+<!-- Decorative Arch Motif -->
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-secondary/20 blur-2xl pointer-events-none"></div>
+<div class="space-y-4 relative z-10">
+<span class="inline-block px-3 py-1 rounded bg-secondary text-on-secondary font-label-eyebrow text-label-eyebrow uppercase tracking-widest">Parties &amp; Feasts</span>
+<h3 class="font-headline-sm text-headline-sm text-surface-bright">Private Dining &amp; Group Celebrations</h3>
+<p class="font-body-md text-body-md text-surface-variant leading-relaxed">
+                Planning an anniversary, celebratory birthday banquet, or corporate dinner in Pune Camp? We curate bespoke Mughlai Dastarkhwan setups and set menus.
+              </p>
+<div class="p-4 rounded-lg bg-surface-container-lowest/10 backdrop-blur-sm space-y-2">
+<div class="flex items-center justify-between text-caption font-caption text-surface-variant">
+<span class="">Capacity</span>
+<strong class="text-secondary-fixed">Up to 60 Guests in Banquet Hall</strong>
+</div>
+<div class="flex items-center justify-between text-caption font-caption text-surface-variant">
+<span class="">Catering Packages</span>
+<strong class="text-secondary-fixed">Biryani &amp; Tandoori Dastarkhwan</strong>
+</div>
+</div>
+<div class="pt-2 flex flex-col sm:flex-row gap-3">
+<a class="flex-1 py-2.5 px-4 rounded-lg bg-secondary hover:bg-secondary-fixed-dim text-primary-container font-label-button text-label-button text-center uppercase tracking-wider font-bold transition-all flex items-center justify-center gap-2" href="tel:+919876543210">
+<span class="material-symbols-outlined text-sm">call</span>
+<span class="">Call Coordinator</span>
+</a>
+<a class="py-2.5 px-4 rounded-lg bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-surface-bright font-label-button text-label-button text-center transition-all flex items-center justify-center gap-2" href="https://wa.me/919876543210" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span class="">WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 3: Location, Timing & Interactive Map Card -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-brand-gold/20">
+<!-- Stylized Cantonment Map Simulation -->
+<div class="w-full h-48 bg-cover bg-center relative flex items-end p-4 group" data-location="Camp Road, Near Main Cantonment Market, Pune Camp, Pune, Maharashtra 411001" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAp9FrnQPxmgTND1iZVC6MwsraZAHKJxVxrz4e6Ig1z_opxOEqtEv0t7EpJTfpOuJhErwTinqO-UTlBk5vp9AA_pnHb4BubB6QiCvYMhvTP-1aHOiskj5XIaCE7JnmToKfhzu2o85KTtEh-IRWwpjOIIESWGzC_jDKIks2CE1rQd30JheGzooAMyC2kRroBrlNB9dfVEazX2RBc1p1cAugx3aSwsNgpAIcG0HyQHA')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/40 to-transparent"></div>
+<div class="relative z-10 w-full flex items-center justify-between">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary-fixed block">Cantonment Landmark</span>
+<span class="font-title-lg text-body-md text-surface-bright font-semibold">Agra Hotel – Pune Camp</span>
+</div>
+<a class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary font-label-button text-caption inline-flex items-center gap-1 hover:bg-secondary-fixed-dim transition-all" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">directions</span>
+<span class="">Navigate</span>
+</a>
+</div>
+</div>
+<!-- Address and Details List -->
+<div class="p-6 space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-xl mt-0.5 shrink-0">pin_drop</span>
+<div>
+<strong class="text-on-surface font-title-lg text-body-md block font-semibold">Address</strong>
+<p class="font-body-md text-body-md text-on-surface-variant">Camp Road, Near Main Cantonment Market, Pune Camp, Pune, Maharashtra 411001</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-xl mt-0.5 shrink-0">schedule</span>
+<div>
+<strong class="text-on-surface font-title-lg text-body-md block font-semibold">Service Hours</strong>
+<p class="font-body-md text-body-md text-on-surface-variant">Monday – Sunday: 11:00 AM – 11:00 PM (Continuous Kitchen)</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-xl mt-0.5 shrink-0">local_parking</span>
+<div>
+<strong class="text-on-surface font-title-lg text-body-md block font-semibold">Parking Availability</strong>
+<p class="font-body-md text-body-md text-on-surface-variant">Street parking along Cantonment avenue &amp; dedicated valet drop-off point at entrance.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Popular Specialty Dishes Preview Band -->
+<section class="w-full bg-surface-container py-16 px-4 sm:px-8 border-t border-brand-gold/20">
+<div class="max-w-7xl mx-auto space-y-8">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest-plus text-secondary font-bold">Awaiting Your Arrival</span>
+<h2 class="font-headline-md text-headline-md text-on-surface pt-1">Signature Delicacies You Can Pre-Reserve</h2>
+</div>
+<a class="inline-flex items-center gap-2 font-label-button text-label-button text-secondary hover:text-on-surface font-semibold group" href="#specialties">
+<span class="">Explore Entire Cantonment Menu</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Dish 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group">
+<div class="aspect-[4/3] w-full bg-primary-container relative overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Authentic Dum Chicken Biryani served in a brass pot with caramelised onions, saffron rice, and fresh mint leaves, captured under warm dining room lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDaOW4AMQd1091hR8AbCLHWzrW0aN40n5AsN12IKPjMdCkliEbkTbm3XhqXt9vpdAou3au67m9gsT3O3pUMavjSAsqCK_1dV5IBYuXlzKkGfy2deDoFv1fapvBilPXJHs2QoI6N1qOHUfMZKa7b2Gd9UVUlLX9u9vHrWRMnOYPRY-rzK8N8pBfHWAiadtScyAbNauLz--G8Hs-WcqB5PjM7GHgvvZHn0Awrf8B1Lw')"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-primary-container/80 text-secondary-fixed text-caption font-caption">House Legend</span>
+</div>
+<div class="p-4 space-y-1">
+<div class="flex items-center justify-between">
+<h4 class="font-title-lg text-body-md font-semibold text-on-surface">Chicken Biryani</h4>
+<span class="font-title-lg text-body-md text-secondary font-bold">₹340</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Our signature dum-cooked basmati rice loaded with secret spices.</p>
+</div>
+</div>
+<!-- Dish 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group">
+<div class="aspect-[4/3] w-full bg-primary-container relative overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Clay-oven roasted chicken tandoori with vibrant charred spices, garnished with coriander, onion rings, and lemon wedges on a rustic platter." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBHCmSaQhgDwliIUE71dzzulGV8ymG-K0zamCO4bCUq-Hv7tEmkzZbjFl3dlyQXeGzo5tfOf3k6g0D8VmVBF_MexLpdGDzreRdxXHyUzPhJM0vpNIOMH1E7EBjaVupmYFFmGRBXQk9uYL7vILxmUwvVHwmRlartrZt7Ad-h9k-ODTCzBVSXtIqNs8GNMRa-ugZQ7mzhpSQH7RhANWDiLmbhVI0_u5OjPlWz71577Q')"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-primary-container/80 text-secondary-fixed text-caption font-caption">Tandoor Special</span>
+</div>
+<div class="p-4 space-y-1">
+<div class="flex items-center justify-between">
+<h4 class="font-title-lg text-body-md font-semibold text-on-surface">Chicken Tandoori</h4>
+<span class="font-title-lg text-body-md text-secondary font-bold">₹360</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Crisp, smoky charcoal grill infused with Kashmiri chilies.</p>
+</div>
+</div>
+<!-- Dish 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group">
+<div class="aspect-[4/3] w-full bg-primary-container relative overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Rich slow-cooked mutton gravy in a traditional copper handi with fragrant ginger juliennes and whole spices." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBaFli5MbVpLZ8kuCYu343ZxcVAlezdHzUWttu4DAP-u2q6oiQo1oBURirXDEdeNp-foz4kHWEqHbuG7cgzXDvMpZPkNfYyXhTdlXpX3yLSdDzcSqE5sTO_p5-nZpb6ZYz7jpkZH3dPeQYLAxTXxt5RC2tZhD_nUJb8dx1oCHeKtxIJ9cAY5Bl8Iks5R8C18__g5pOYR75bGtaKeqWzeXl48Jy24AExX9qjULmXLw')"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-primary-container/80 text-secondary-fixed text-caption font-caption">Slow Cooked</span>
+</div>
+<div class="p-4 space-y-1">
+<div class="flex items-center justify-between">
+<h4 class="font-title-lg text-body-md font-semibold text-on-surface">Mutton Rogan Josh</h4>
+<span class="font-title-lg text-body-md text-secondary font-bold">₹420</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Tender bone-in cuts simmered for 5 hours in spiced reduction.</p>
+</div>
+</div>
+<!-- Dish 4 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group">
+<div class="aspect-[4/3] w-full bg-primary-container relative overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Golden skewed Paneer Tikka cubes with charred bell peppers, served with mint chutney in a cozy restaurant." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_b_YhK8vAi09xkwf5C6azKMKMUh_lOFb3bQXqhNrqTT0Hxl86L5hWC3_FYa8aL1mQ6RQLMTzTJk8VCHL7c8TUDqb9tAXt9N64YwWjE80PemOxd8pmJfgAUx4YCEAaHKhRwB0aWvZNTwpW6mvJm7usLcoYklJCHreshH71EwOKDpnmBbN8_QjG2w76869TQaBfPYMOwVQStB9QyGmRrTjod34r5r3NSJtPfa-YFA')"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-primary-container/80 text-secondary-fixed text-caption font-caption">Vegetarian Favorite</span>
+</div>
+<div class="p-4 space-y-1">
+<div class="flex items-center justify-between">
+<h4 class="font-title-lg text-body-md font-semibold text-on-surface">Paneer Tikka Sufiyana</h4>
+<span class="font-title-lg text-body-md text-secondary font-bold">₹290</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Malai cottage cheese cubes spiced with roasted cumin and crushed coriander.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Accordion & Quick Assurance Section -->
+<section class="w-full bg-surface-container-low py-16 px-4 sm:px-8">
+<div class="max-w-4xl mx-auto space-y-8">
+<div class="text-center space-y-2">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest-plus text-secondary font-bold">Frequently Asked Questions</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Planning Your Visit to Agra Hotel</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Everything you need to know before joining us for lunch or dinner.</p>
+</div>
+<div class="space-y-4">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-xl p-5 shadow-sm cursor-pointer">
+<summary class="flex items-center justify-between font-title-lg text-body-md font-semibold text-on-surface list-none">
+<span class="">Do we need to pay an advance deposit for table reservations?</span>
+<span class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-3 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            No advance deposit is needed for standard tables up to 8 guests. For large banquet bookings exceeding 12 guests or tailored celebratory menus, a modest token advance may be requested by our coordinator.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-xl p-5 shadow-sm cursor-pointer">
+<summary class="flex items-center justify-between font-title-lg text-body-md font-semibold text-on-surface list-none">
+<span class="">Is there a pure vegetarian dining menu available?</span>
+<span class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-3 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Yes, absolutely. We prepare our vegetarian curries, paneer specialties, dals, and vegetable biryanis using dedicated cookware and separate tandoori skewers with immaculate hygiene standards.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-xl p-5 shadow-sm cursor-pointer">
+<summary class="flex items-center justify-between font-title-lg text-body-md font-semibold text-on-surface list-none">
+<span class="">Can we bring our own celebratory cake for birthdays and anniversaries?</span>
+<span class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-3 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            You are warmly welcome to bring your celebration cake. Our stewards will provide celebratory plates, cake-cutting cutlery, and complimentary chilled storage during your meal.
+          </p>
+</details>
+</div>
+<!-- Quick Assistance Callout Bar -->
+<div class="p-6 rounded-xl bg-surface-container-high flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left border border-brand-gold/20">
+<div>
+<strong class="font-title-lg text-body-md text-on-surface block">Need urgent booking for tonight?</strong>
+<span class="font-caption text-caption text-on-surface-variant">For immediate tables within the next 2 hours, call our floor captain directly.</span>
+</div>
+<a class="px-6 py-2.5 rounded-lg bg-primary-container text-surface-bright font-label-button text-label-button hover:bg-secondary transition-all flex items-center gap-2" href="tel:+919876543210">
+<span class="material-symbols-outlined text-sm">phone_in_talk</span>
+<span class="">+91 98765 43210</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript Handling for Reservation Form Flow -->
+<script>
+    // Guest Selection
+    function selectGuests(count) {
+      document.getElementById('party_size_input').value = count;
+      document.getElementById('selected-guests-label').textContent = count + ' Guests Selected';
+      
+      const buttons = document.querySelectorAll('.guest-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-surface-bright', 'shadow-sm');
+        btn.classList.add('bg-surface-container', 'text-on-surface');
+      });
+
+      // Highlight clicked button
+      if (event && event.currentTarget) {
+        event.currentTarget.classList.remove('bg-surface-container', 'text-on-surface');
+        event.currentTarget.classList.add('bg-primary-container', 'text-surface-bright', 'shadow-sm');
+      }
+    }
+
+    // Service Shift (Lunch vs Dinner)
+    function selectService(service) {
+      const lunchBtn = document.getElementById('service-lunch');
+      const dinnerBtn = document.getElementById('service-dinner');
+      const timeSlotsContainer = document.getElementById('time-slots-container');
+      const heading = document.getElementById('time-slot-heading');
+
+      if (service === 'lunch') {
+        lunchBtn.className = 'py-3 px-3 rounded-lg font-label-button text-label-button text-center bg-secondary text-on-secondary shadow-sm transition-all flex items-center justify-center gap-1.5';
+        dinnerBtn.className = 'py-3 px-3 rounded-lg font-label-button text-label-button text-center bg-surface-container-low hover:bg-surface-container text-on-surface transition-all flex items-center justify-center gap-1.5';
+        heading.textContent = 'Available Lunch Slots (12:00 PM – 3:30 PM)';
+        
+        timeSlotsContainer.innerHTML = `
+          <button type="button" onclick="selectTime(this, '12:00 PM')" class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-surface-container-low hover:bg-surface-container text-on-surface transition-all">12:00 PM</button>
+          <button type="button" onclick="selectTime(this, '12:45 PM')" class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-primary-container text-on-primary font-semibold shadow-sm transition-all">12:45 PM</button>
+          <button type="button" onclick="selectTime(this, '01:30 PM')" class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-surface-container-low hover:bg-surface-container text-on-surface transition-all">01:30 PM</button>
+          <button type="button" onclick="selectTime(this, '02:15 PM')" class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-surface-container-low hover:bg-surface-container text-on-surface transition-all">02:15 PM</button>
+          <button type="button" onclick="selectTime(this, '03:00 PM')" class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-surface-container-low hover:bg-surface-container text-on-surface transition-all">03:00 PM</button>
+          <button type="button" onclick="selectTime(this, '03:30 PM')" class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-surface-container-low hover:bg-surface-container text-on-surface transition-all">03:30 PM</button>
+        `;
+        document.getElementById('selected_time_slot').value = '12:45 PM';
+      } else {
+        dinnerBtn.className = 'py-3 px-3 rounded-lg font-label-button text-label-button text-center bg-secondary text-on-secondary shadow-sm transition-all flex items-center justify-center gap-1.5';
+        lunchBtn.className = 'py-3 px-3 rounded-lg font-label-button text-label-button text-center bg-surface-container-low hover:bg-surface-container text-on-surface transition-all flex items-center justify-center gap-1.5';
+        heading.textContent = 'Available Dinner Slots (07:00 PM – 11:00 PM)';
+        
+        timeSlotsContainer.innerHTML = `
+          <button type="button" onclick="selectTime(this, '07:00 PM')" class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-primary-container text-on-primary font-semibold shadow-sm transition-all">07:00 PM</button>
+          <button type="button" onclick="selectTime(this, '07:45 PM')" class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-surface-container-low hover:bg-surface-container text-on-surface transition-all">07:45 PM</button>
+          <button type="button" onclick="selectTime(this, '08:30 PM')" class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-surface-container-low hover:bg-surface-container text-on-surface transition-all">08:30 PM</button>
+          <button type="button" onclick="selectTime(this, '09:15 PM')" class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-surface-container-low hover:bg-surface-container text-on-surface transition-all">09:15 PM</button>
+          <button type="button" onclick="selectTime(this, '10:00 PM')" class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-surface-container-low hover:bg-surface-container text-on-surface transition-all">10:00 PM</button>
+          <button type="button" onclick="selectTime(this, '10:30 PM')" class="time-slot-pill py-2 rounded-lg text-center font-caption text-caption bg-surface-container-low hover:bg-surface-container text-on-surface transition-all">10:30 PM</button>
+        `;
+        document.getElementById('selected_time_slot').value = '07:00 PM';
+      }
+    }
+
+    // Time Slot Selection Pill
+    function selectTime(element, timeString) {
+      const pills = document.querySelectorAll('.time-slot-pill');
+      pills.forEach(pill => {
+        pill.classList.remove('bg-primary-container', 'text-on-primary', 'font-semibold', 'shadow-sm');
+        pill.classList.add('bg-surface-container-low', 'text-on-surface');
+      });
+      element.classList.remove('bg-surface-container-low', 'text-on-surface');
+      element.classList.add('bg-primary-container', 'text-on-primary', 'font-semibold', 'shadow-sm');
+      document.getElementById('selected_time_slot').value = timeString;
+    }
+
+    // Submission Behavior
+    function handleBookingSubmission() {
+      const alertBox = document.getElementById('booking-confirmation-alert');
+      alertBox.classList.remove('hidden');
+      alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  </script>
+</div></main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-brand-walnut text-stone-300 pt-16 pb-12 px-4 sm:px-8 border-t border-brand-gold/20" data-purpose="site-footer" id="contact">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+<!-- Brand Summary -->
+<div class="lg:col-span-5 space-y-4">
+<div class="flex items-center gap-3 border border-brand-gold/20">
+<div class="w-9 h-9 border border-brand-gold/60 rounded-t-full flex items-center justify-center p-1.5">
+<svg class="w-full h-full text-brand-gold" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+<path d="M3 21h18M5 21V9a7 7 0 0 1 14 0v12M9 21V11a3 3 0 0 1 6 0v10"></path>
+</svg>
+</div>
+<div>
+<span class="font-serif tracking-widest text-lg font-bold uppercase text-white block">Agra Hotel</span>
+<span class="text-[9px] uppercase tracking-widest-plus text-brand-gold">Pune Camp</span>
+</div>
+</div>
+<p class="text-xs sm:text-sm text-stone-400 font-light leading-relaxed max-w-sm">
+            Pune Camp’s treasured address for authentic heritage culinary experiences, rich Mughlai delicacies, and welcoming family memories.
+          </p>
+</div>
+<!-- Quick Navigation -->
+<div class="lg:col-span-3 space-y-3">
+<h4 class="text-xs font-bold text-white uppercase tracking-widest">Navigation</h4>
+<ul class="space-y-2 text-xs sm:text-sm font-light">
+<li class=""><a class="hover:text-brand-gold transition-colors" href="#hero">Home &amp; Heritage</a></li>
+<li class=""><a class="hover:text-brand-gold transition-colors" href="#story">Our Story</a></li>
+<li class=""><a class="hover:text-brand-gold transition-colors" href="#specialties">Specialty Menu</a></li>
+<li class=""><a class="hover:text-brand-gold transition-colors" href="#experience">Dining Ambience</a></li>
+<li class=""><a class="hover:text-brand-gold transition-colors" href="#reservations">Book a Table</a></li>
+</ul>
+</div>
+<!-- Contact & Working Hours -->
+<div class="lg:col-span-4 space-y-3">
+<h4 class="text-xs font-bold text-white uppercase tracking-widest">Contact &amp; Timings</h4>
+<p class="text-xs sm:text-sm text-stone-400 font-light">
+            Camp Road, Near Main Cantonment Market,<br>
+            Pune Camp, Pune, Maharashtra 411001
+          </p>
+<div class="pt-2 text-xs sm:text-sm">
+<span class="text-brand-gold block font-medium">Daily Service:</span>
+<span class="text-stone-300">10:00 AM – 11:00 PM (Monday to Sunday)</span>
+</div>
+<div class="pt-1">
+<a class="text-brand-gold font-semibold text-sm hover:underline" href="tel:+919876543210">+91 98765 43210</a>
+</div>
+</div>
+</div>
+<!-- Copyright & Credential Row -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+<p class="">© <span id="current-year" class="">2026</span> Agra Hotel – Pune Camp. All rights reserved.</p>
+<p class="tracking-wide">Designed for Timeless Dining in Pune</p>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: InteractiveScripts -->
+<!-- Navigation Scroll Behavior & Modal Handling -->
+<script data-purpose="header-scroll-and-interactions">
+    document.addEventListener('DOMContentLoaded', () => {
+      // Dynamic Year
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+
+      // Header Scroll Background Transition
+      const header = document.getElementById('main-header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+          header.classList.add('bg-brand-walnut-dark/95', 'backdrop-blur-md', 'shadow-lg', 'py-3');
+          header.classList.remove('bg-transparent', 'py-4');
+        } else {
+          header.classList.remove('bg-brand-walnut-dark/95', 'backdrop-blur-md', 'shadow-lg', 'py-3');
+          header.classList.add('bg-transparent', 'py-4');
+        }
+      });
+
+      // Mobile Menu Toggle
+      const mobileToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          mobileMenu.classList.toggle('flex');
+        });
+      }
+    });
+  </script>
+<!-- END: InteractiveScripts -->
+
+
+</body></html>
