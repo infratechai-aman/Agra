@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
+import ScrollProgress from './components/ScrollProgress';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import FeastTrayDrawer from './components/FeastTrayDrawer';
@@ -14,6 +15,12 @@ import MenuPage from './pages/MenuPage';
 import GalleryPage from './pages/GalleryPage';
 import ReservationsPage from './pages/ReservationsPage';
 import ContactPage from './pages/ContactPage';
+import PrivateDiningPage from './pages/PrivateDiningPage';
+import FaqPage from './pages/FaqPage';
+import CareersPage from './pages/CareersPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsPage from './pages/TermsPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 import { ShoppingBag, Calendar, ArrowUp } from 'lucide-react';
 
@@ -98,6 +105,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#FAF8F3] text-[#241812] flex flex-col selection:bg-[#C9A45C] selection:text-[#18100C]">
+      {/* Luxury Scroll Progress Bar */}
+      <ScrollProgress />
+
       {/* Scroll restoration on route change */}
       <ScrollToTop />
 
@@ -163,8 +173,36 @@ export default function App() {
               />
             }
           />
-          {/* Fallback to Home */}
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route
+            path="/private-dining"
+            element={
+              <PrivateDiningPage
+                onShowToast={showToast}
+              />
+            }
+          />
+          <Route
+            path="/faqs"
+            element={<FaqPage />}
+          />
+          <Route
+            path="/careers"
+            element={
+              <CareersPage
+                onShowToast={showToast}
+              />
+            }
+          />
+          <Route
+            path="/privacy-policy"
+            element={<PrivacyPolicyPage />}
+          />
+          <Route
+            path="/terms"
+            element={<TermsPage />}
+          />
+          {/* Custom Branded 404 Fallback */}
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
 

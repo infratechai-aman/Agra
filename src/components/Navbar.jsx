@@ -24,8 +24,10 @@ export default function Navbar({ onOpenBooking, onOpenTray, trayItemCount }) {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'Our Story' },
-    { path: '/menu', label: 'Menu Repertoire' },
+    { path: '/menu', label: 'Menu' },
     { path: '/gallery', label: 'Ambience' },
+    { path: '/private-dining', label: 'Banquets' },
+    { path: '/faqs', label: 'FAQs' },
     { path: '/reservations', label: 'Reservations' },
     { path: '/contact', label: 'Contact' }
   ];
@@ -68,7 +70,7 @@ export default function Navbar({ onOpenBooking, onOpenTray, trayItemCount }) {
         </Link>
 
         {/* Desktop Multi-Page Navigation */}
-        <nav className="hidden lg:flex items-center gap-7 text-sm font-medium tracking-wide">
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-6 text-xs xl:text-sm font-medium tracking-wide">
           {navLinks.map((link) => {
             const isActive = location.pathname === link.path;
 

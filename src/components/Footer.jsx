@@ -16,7 +16,7 @@ export default function Footer() {
         <AnimatedReveal animation="fade-up">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
             {/* Brand Summary */}
-            <div className="lg:col-span-5 space-y-5">
+            <div className="lg:col-span-4 space-y-5">
               <Link to="/" className="flex items-center gap-3 group inline-flex">
                 <div className="w-10 h-10 border border-[#C9A45C]/70 rounded-t-full flex items-center justify-center p-1.5 bg-[#241812] group-hover:scale-105 group-hover:border-[#C9A45C] group-hover:shadow-[0_0_15px_rgba(201,164,92,0.3)] transition-all duration-300">
                   <svg
@@ -51,17 +51,17 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Quick Navigation Links */}
-            <div className="lg:col-span-3 space-y-3">
+            {/* Repertoire Links */}
+            <div className="lg:col-span-2 space-y-3">
               <h4 className="text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2">
-                <span>Pages</span>
-                <div className="w-6 h-0.5 bg-[#C9A45C]/50 rounded-full" />
+                <span>Explore</span>
+                <div className="w-4 h-0.5 bg-[#C9A45C]/50 rounded-full" />
               </h4>
               <ul className="space-y-2 text-xs sm:text-sm font-light">
                 {[
                   { to: '/', label: 'Home' },
                   { to: '/about', label: 'Our Story & Legacy' },
-                  { to: '/menu', label: 'Culinary Repertoire Menu' },
+                  { to: '/menu', label: 'Menu Repertoire' },
                   { to: '/gallery', label: 'Ambience & Gallery' },
                   { to: '/reservations', label: 'Table Reservations' },
                   { to: '/contact', label: 'Contact & Location' },
@@ -69,7 +69,33 @@ export default function Footer() {
                   <li key={item.to}>
                     <Link
                       to={item.to}
-                      className="hover:text-[#C9A45C] transition-all duration-200 text-stone-300 hover:translate-x-1.5 inline-block"
+                      className="hover:text-[#C9A45C] transition-all duration-200 text-stone-300 hover:translate-x-1 inline-block"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Experiences & Hospitality */}
+            <div className="lg:col-span-3 space-y-3">
+              <h4 className="text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2">
+                <span>Experiences & Info</span>
+                <div className="w-4 h-0.5 bg-[#C9A45C]/50 rounded-full" />
+              </h4>
+              <ul className="space-y-2 text-xs sm:text-sm font-light">
+                {[
+                  { to: '/private-dining', label: 'Banquets & Private Dining' },
+                  { to: '/faqs', label: 'Guest FAQs & Halal Guide' },
+                  { to: '/careers', label: 'Careers & Apprenticeship' },
+                  { to: '/terms', label: 'Terms of Dining & Service' },
+                  { to: '/privacy-policy', label: 'Privacy & Data Policy' },
+                ].map((item) => (
+                  <li key={item.to}>
+                    <Link
+                      to={item.to}
+                      className="hover:text-[#C9A45C] transition-all duration-200 text-stone-300 hover:translate-x-1 inline-block"
                     >
                       {item.label}
                     </Link>
@@ -79,10 +105,10 @@ export default function Footer() {
             </div>
 
             {/* Contact, Location & Hours */}
-            <div className="lg:col-span-4 space-y-4">
+            <div className="lg:col-span-3 space-y-4">
               <h4 className="text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2">
                 <span>Contact & Timings</span>
-                <div className="w-6 h-0.5 bg-[#C9A45C]/50 rounded-full" />
+                <div className="w-4 h-0.5 bg-[#C9A45C]/50 rounded-full" />
               </h4>
 
               <div className="space-y-3.5 text-xs sm:text-sm text-stone-400 font-light">
