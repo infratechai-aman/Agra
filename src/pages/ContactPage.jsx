@@ -92,7 +92,7 @@ export default function ContactPage({ onShowToast }) {
                 <h4 className="font-serif text-lg font-bold text-[#241812]">WhatsApp</h4>
                 <p className="text-xs text-stone-500">Fast chat & table confirmation</p>
                 <a
-                  href={`https://wa.me/${RESTAURANT_INFO.whatsapp}?text=Hello%20Agra%20Hotel!`}
+                  href={`https://wa.me/${RESTAURANT_INFO.whatsapp}?text=Hello%20Agra%20Restaurant!`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-bold text-sm text-[#25D366] hover:underline block pt-1"
@@ -153,7 +153,7 @@ export default function ContactPage({ onShowToast }) {
                   Thank You, {name}!
                 </h4>
                 <p className="text-xs text-stone-600 max-w-sm mx-auto leading-relaxed">
-                  Your message has been delivered to the Agra Hotel Pune Camp desk. We will call or WhatsApp your number shortly.
+                  Your message has been delivered to the Agra Restaurant Pune Camp desk. We will call or WhatsApp your number shortly.
                 </p>
                 <button
                   onClick={() => {
@@ -233,7 +233,7 @@ export default function ContactPage({ onShowToast }) {
                     className="btn-shine w-full py-4 rounded-xl bg-[#C9A45C] hover:bg-[#b59146] text-[#18100C] font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition-all cursor-pointer hover:-translate-y-0.5 hover:shadow-xl"
                   >
                     <Send className="w-4 h-4" />
-                    <span>Send Message to Agra Hotel</span>
+                    <span>Send Message to Agra Restaurant</span>
                   </button>
                 </div>
               </form>

@@ -134,7 +134,7 @@ export default function Footer() {
         {/* Copyright & Credential Row */}
         <AnimatedReveal animation="fade-up" delay={150}>
           <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
-            <p>© {currentYear} Agra Hotel – Pune Camp. All rights reserved.</p>
+            <p>© {currentYear} Agra Restaurant – Pune Camp. All rights reserved.</p>
             <p className="tracking-wide text-stone-400 flex items-center gap-1.5">
               <span>Designed with pride for Timeless Hospitality in Pune</span>
             </p>

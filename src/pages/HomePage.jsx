@@ -39,7 +39,7 @@ export default function HomePage({ onOpenBooking, onAddToCart, cartItems }) {
                 A Taste Loved<br />for Generations
               </h2>
               <p className="text-stone-700 text-sm sm:text-base leading-relaxed font-normal">
-                Agra Hotel, located in the heart of Pune Camp, has been serving delicious and authentic North Indian and Mughlai preparations with consistent quality and warm hospitality since 1968.
+                Agra Restaurant, located in the heart of Pune Camp, has been serving delicious and authentic North Indian and Mughlai preparations with consistent quality and warm hospitality since 1968.
               </p>
               <p className="text-stone-600 text-sm sm:text-base leading-relaxed font-light">
                 Rooted in classic North Indian spice crafts and time-honored Dum cooking techniques, every culinary preparation is a celebration of our family’s love for hearty meals.
@@ -61,7 +61,7 @@ export default function HomePage({ onOpenBooking, onAddToCart, cartItems }) {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-stone-200 img-zoom group">
                 <img
                   src="/images/rattan-dining-booths.png"
-                  alt="Agra Hotel Comfortable Green Paneling and Rattan Family Dining Area"
+                  alt="Agra Restaurant Comfortable Green Paneling and Rattan Family Dining Area"
                   className="w-full h-[320px] sm:h-[460px] object-cover object-center filter contrast-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
@@ -120,7 +120,7 @@ export default function HomePage({ onOpenBooking, onAddToCart, cartItems }) {
             <AnimatedReveal animation="fade-left" delay={100} className="hover-lift group relative rounded-3xl overflow-hidden shadow-xl bg-[#241812] min-h-[300px] sm:min-h-[380px] border border-stone-800 img-zoom">
               <img
                 src="/images/rattan-dining-booths.png"
-                alt="Agra Hotel Cane & Rattan Dining Enclave"
+                alt="Agra Restaurant Cane & Rattan Dining Enclave"
                 className="w-full h-full object-cover filter brightness-95"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#18100C]/95 via-[#241812]/40 to-transparent flex flex-col justify-end p-6 sm:p-8 text-white transition-opacity">
@@ -140,7 +140,7 @@ export default function HomePage({ onOpenBooking, onAddToCart, cartItems }) {
             <AnimatedReveal animation="fade-right" delay={150} className="hover-lift group relative rounded-3xl overflow-hidden shadow-xl bg-[#241812] min-h-[300px] sm:min-h-[380px] border border-stone-800 img-zoom">
               <img
                 src="/images/brick-wall-dining.jpg"
-                alt="Agra Hotel Exposed Brick Wall Lounge"
+                alt="Agra Restaurant Exposed Brick Wall Lounge"
                 className="w-full h-full object-cover filter brightness-95"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#18100C]/95 via-[#18100C]/40 to-transparent flex flex-col justify-end p-6 sm:p-8 text-white transition-opacity">
@@ -167,7 +167,7 @@ export default function HomePage({ onOpenBooking, onAddToCart, cartItems }) {
               More than just a meal
             </span>
             <h2 className="text-3xl sm:text-4xl font-serif text-white">
-              Why Guests Keep Returning to Agra Hotel
+              Why Guests Keep Returning to Agra Restaurant
             </h2>
           </AnimatedReveal>
 
@@ -196,7 +196,7 @@ export default function HomePage({ onOpenBooking, onAddToCart, cartItems }) {
           <div className="lg:col-span-6 relative min-h-[240px] sm:min-h-[360px] lg:min-h-full overflow-hidden">
             <img
               src="/images/hero-dining-hall.png"
-              alt="Agra Hotel Dining Room"
+              alt="Agra Restaurant Dining Room"
               className="w-full h-full object-cover filter brightness-90 animate-kenburns"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#18100C]/90 lg:block hidden pointer-events-none" />
@@ -212,7 +212,7 @@ export default function HomePage({ onOpenBooking, onAddToCart, cartItems }) {
                 Dine, Relax<br />and Enjoy
               </h2>
               <p className="text-stone-300 text-sm sm:text-base font-light leading-relaxed">
-                Whether it’s a family meal, a gathering with friends or a quick bite, Agra Hotel is always a memorable experience in Pune Camp.
+                Whether it’s a family meal, a gathering with friends or a quick bite, Agra Restaurant is always a memorable experience in Pune Camp.
               </p>
 
               <div className="flex flex-wrap items-center gap-4 pt-2">

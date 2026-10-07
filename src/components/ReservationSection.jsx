@@ -67,7 +67,7 @@ export default function ReservationSection({ onShowToast }) {
   };
 
   const getWhatsAppBookingUrl = (booking) => {
-    const text = `Hello Agra Hotel Pune Camp! I would like to confirm my table reservation:%0A%0A*Reference:* ${booking.ref}%0A*Name:* ${booking.name}%0A*Guests:* ${booking.guests} Guests%0A*Date:* ${booking.date}%0A*Time:* ${booking.time} (${booking.session.toUpperCase()})%0A*Seating Preference:* ${booking.seating}${booking.notes ? `%0A*Special Notes:* ${booking.notes}` : ''}%0A%0APlease confirm our table availability. Thank you!`;
+    const text = `Hello Agra Restaurant Pune Camp! I would like to confirm my table reservation:%0A%0A*Reference:* ${booking.ref}%0A*Name:* ${booking.name}%0A*Guests:* ${booking.guests} Guests%0A*Date:* ${booking.date}%0A*Time:* ${booking.time} (${booking.session.toUpperCase()})%0A*Seating Preference:* ${booking.seating}${booking.notes ? `%0A*Special Notes:* ${booking.notes}` : ''}%0A%0APlease confirm our table availability. Thank you!`;
     return `https://wa.me/${RESTAURANT_INFO.whatsapp}?text=${text}`;
   };
 
@@ -491,7 +491,7 @@ export default function ReservationSection({ onShowToast }) {
                   <span>Call Coordinator</span>
                 </a>
                 <a
-                  href={`https://wa.me/${RESTAURANT_INFO.whatsapp}?text=Hello%20Agra%20Hotel!%20I%20would%20like%20to%20inquire%20about%20booking%20a%20private%20banquet%20for%20our%20family%20gathering.`}
+                  href={`https://wa.me/${RESTAURANT_INFO.whatsapp}?text=Hello%20Agra%20Restaurant!%20I%20would%20like%20to%20inquire%20about%20booking%20a%20private%20banquet%20for%20our%20family%20gathering.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="py-2.5 px-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 cursor-pointer hover:-translate-y-0.5"
@@ -510,7 +510,7 @@ export default function ReservationSection({ onShowToast }) {
                   <span>Pune Camp Location</span>
                 </div>
                 <h4 className="font-serif text-lg font-bold text-[#241812]">
-                  Agra Hotel – Cantonment Landmark
+                  Agra Restaurant – Cantonment Landmark
                 </h4>
                 <p className="text-xs text-stone-600 leading-relaxed">
                   {RESTAURANT_INFO.address}
@@ -538,7 +538,7 @@ export default function ReservationSection({ onShowToast }) {
               Frequently Asked Questions
             </span>
             <h3 className="font-serif text-3xl font-bold text-[#241812]">
-              Planning Your Visit to Agra Hotel
+              Planning Your Visit to Agra Restaurant
             </h3>
           </div>
 

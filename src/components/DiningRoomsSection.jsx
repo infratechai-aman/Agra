@@ -34,7 +34,7 @@ export default function DiningRoomsSection({ onReserveCorner }) {
         <AnimatedReveal animation="fade-left" className="lg:col-span-7 rounded-3xl overflow-hidden shadow-xl border border-[#D8C7A5]/50 relative min-h-[440px] bg-[#241812] group img-zoom hover-lift">
           <img
             src="/images/rattan-dining-booths.png"
-            alt="Warm ambient interior of Agra Hotel with rattan cane booths and amber lighting"
+            alt="Warm ambient interior of Agra Restaurant with rattan cane booths and amber lighting"
             className="w-full h-full object-cover filter brightness-95"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#18100C]/95 via-[#241812]/30 to-transparent flex flex-col justify-end p-8 text-white transition-opacity">
@@ -56,7 +56,7 @@ export default function DiningRoomsSection({ onReserveCorner }) {
           <div className="flex-1 rounded-3xl overflow-hidden relative shadow-xl min-h-[260px] bg-[#241812] group border border-[#D8C7A5]/50 img-zoom hover-lift">
             <img
               src="/images/brick-wall-dining.jpg"
-              alt="Exposed brick wall dining room and dessert bar at Agra Hotel Pune Camp"
+              alt="Exposed brick wall dining room and dessert bar at Agra Restaurant Pune Camp"
               className="w-full h-full object-cover filter brightness-95"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#18100C]/95 via-[#18100C]/40 to-transparent p-6 flex flex-col justify-end text-white transition-opacity">

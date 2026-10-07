@@ -27,7 +27,7 @@ export default function QuickBookingModal({ isOpen, onClose, onShowToast }) {
   };
 
   const getWhatsAppUrl = () => {
-    const text = `Hello Agra Hotel Pune Camp! I would like to reserve a table:%0A%0A*Reference:* ${bookingRef}%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Guests:* ${guests}%0A*Date:* ${date}%0A*Time:* ${time}%0A%0APlease confirm my booking. Thank you!`;
+    const text = `Hello Agra Restaurant Pune Camp! I would like to reserve a table:%0A%0A*Reference:* ${bookingRef}%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Guests:* ${guests}%0A*Date:* ${date}%0A*Time:* ${time}%0A%0APlease confirm my booking. Thank you!`;
     return `https://wa.me/${RESTAURANT_INFO.whatsapp}?text=${text}`;
   };
 
@@ -99,7 +99,7 @@ export default function QuickBookingModal({ isOpen, onClose, onShowToast }) {
                   Reserve Your Experience
                 </span>
                 <h3 className="text-xl sm:text-2xl font-serif text-white font-bold leading-tight">
-                  Book a Table at Agra Hotel
+                  Book a Table at Agra Restaurant
                 </h3>
                 <p className="text-[11px] text-stone-400">
                   Instant confirmation for your dining in Pune Camp

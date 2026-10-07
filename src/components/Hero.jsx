@@ -13,7 +13,7 @@ export default function Hero({ onOpenBooking, onScrollToMenu }) {
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <img
           src="/images/hero-dining-hall.png"
-          alt="Agra Hotel Pune Camp Warm Interior Dining Hall"
+          alt="Agra Restaurant Pune Camp Warm Interior Dining Hall"
           className="w-full h-full object-cover object-center filter brightness-[0.78] contrast-[1.08] animate-kenburns"
         />
         {/* Chiaroscuro Vignette & Gradient Overlays */}
@@ -38,7 +38,7 @@ export default function Hero({ onOpenBooking, onScrollToMenu }) {
 
           {/* Editorial Display Heading with Smooth Stagger Entrance */}
           <h1 className="text-4xl xs:text-5xl sm:text-7xl lg:text-8xl font-serif font-normal text-white leading-[1.08] sm:leading-[1.05] tracking-tight mb-5 sm:mb-6 animate-slide-up text-center sm:text-left">
-            Agra Hotel<br />
+            Agra Restaurant<br />
             <span className="italic font-normal text-[#E8D7B0] transition-colors hover:text-[#C9A45C]">
               {RESTAURANT_INFO.city}
             </span>

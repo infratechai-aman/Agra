@@ -63,7 +63,7 @@ export default function GallerySection() {
           <div className="relative z-10 max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#36241B] text-[#E8D7B0] text-xs uppercase tracking-[0.2em] font-bold">
               <Camera className="w-3.5 h-3.5 text-[#C9A45C]" />
-              <span>A Glimpse of Agra Hotel</span>
+              <span>A Glimpse of Agra Restaurant</span>
             </div>
 
             <h2 className="text-4xl sm:text-6xl font-serif text-[#FAF8F3] tracking-tight">
@@ -245,7 +245,7 @@ export default function GallerySection() {
               <div className="pt-6 border-t border-white/10 space-y-3">
                 <div className="text-xs text-[#E8D7B0] font-medium flex items-center gap-1.5">
                   <Camera className="w-3.5 h-3.5 text-[#C9A45C]" />
-                  <span>Agra Hotel • Pune Camp Cantonment Archive</span>
+                  <span>Agra Restaurant • Pune Camp Cantonment Archive</span>
                 </div>
                 <button
                   onClick={() => setLightboxIndex(null)}

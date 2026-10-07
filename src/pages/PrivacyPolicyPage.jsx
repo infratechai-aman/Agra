@@ -21,7 +21,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="text-xs sm:text-sm text-stone-300 max-w-xl mx-auto font-light leading-relaxed">
-            At Agra Hotel Pune Camp, honoring your trust is our highest tradition. Here is how we safeguard your personal data and dining details.
+            At Agra Restaurant Pune Camp, honoring your trust is our highest tradition. Here is how we safeguard your personal data and dining details.
           </p>
           <div className="text-[11px] text-[#C9A45C] tracking-wider uppercase font-semibold pt-2">
             Last Updated: {lastUpdated}
@@ -39,7 +39,7 @@ export default function PrivacyPolicyPage() {
               <h2 className="font-serif text-xl sm:text-2xl font-bold">1. Our Commitment to Your Privacy</h2>
             </div>
             <p className="text-xs sm:text-sm text-stone-600">
-              Agra Hotel ("we", "us", or "our"), established in 1968 in Pune Camp, Maharashtra, operates the official website and digital reservation concierge. We are dedicated to maintaining the confidentiality, integrity, and security of all personal details entrusted to us by our patrons, dining guests, and event organizers.
+              Agra Restaurant ("we", "us", or "our"), established in 1968 in Pune Camp, Maharashtra, operates the official website and digital reservation concierge. We are dedicated to maintaining the confidentiality, integrity, and security of all personal details entrusted to us by our patrons, dining guests, and event organizers.
             </p>
           </div>
 
@@ -99,7 +99,7 @@ export default function PrivacyPolicyPage() {
               If you have any questions regarding your reservation records or wish to request data updates, please contact our desk:
             </p>
             <div className="p-4 rounded-xl bg-[#FAF5EC] border border-[#E0D3C1] text-xs space-y-1.5 text-[#241812]">
-              <p><strong>Agra Hotel — General Manager Desk</strong></p>
+              <p><strong>Agra Restaurant — General Manager Desk</strong></p>
               <p>{RESTAURANT_INFO.address}</p>
               <p>Phone: <a href={`tel:${RESTAURANT_INFO.phone.replace(/\s+/g, '')}`} className="text-[#775a19] font-bold hover:underline">{RESTAURANT_INFO.phone}</a></p>
             </div>

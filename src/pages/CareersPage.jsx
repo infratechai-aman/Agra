@@ -51,7 +51,7 @@ export default function CareersPage({ onShowToast }) {
     setApplied(true);
     if (onShowToast) onShowToast('Application submitted! Our manager will call you for an interview.', 'success');
 
-    const msg = `*AGRA HOTEL PUNE CAMP - JOB APPLICATION*%0A%0A` +
+    const msg = `*AGRA RESTAURANT PUNE CAMP - JOB APPLICATION*%0A%0A` +
       `*Name:* ${candidateName}%0A` +
       `*Phone:* ${candidatePhone}%0A` +
       `*Position Applied:* ${selectedRole}%0A` +
@@ -74,7 +74,7 @@ export default function CareersPage({ onShowToast }) {
           </div>
 
           <h1 className="text-3xl xs:text-5xl sm:text-6xl font-serif text-[#FAF8F3] tracking-tight">
-            Careers at Agra Hotel
+            Careers at Agra Restaurant
           </h1>
 
           <p className="text-xs sm:text-base text-stone-300 max-w-xl mx-auto font-light leading-relaxed">

@@ -1,16 +1,16 @@
 // ==========================================================================
-// AGRA HOTEL PUNE CAMP - ARCHIVAL DATA REPOSITORY
+// AGRA RESTAURANT PUNE CAMP - ARCHIVAL DATA REPOSITORY
 // Authentic culinary menu, historical narrative, gallery items & reviews
 // ==========================================================================
 
 export const RESTAURANT_INFO = {
-  name: "Agra Hotel",
+  name: "Agra Restaurant",
   city: "Pune Camp",
   tagline: "Traditional Taste of Pune",
   description: "Delicious food, warm hospitality and a dining experience that feels like home since 1968. Treasured for slow-cooked earthen dum biryanis, live charcoal sigri grills, and royal Mughlai curries in the historic Cantonment quarter.",
   phone: "+91 98765 43210",
   whatsapp: "919876543210",
-  email: "reservations@agrahotelpunecamp.com",
+  email: "reservations@agrarestaurantpunecamp.com",
   address: "Camp Road, Near Main Cantonment Market, Pune Camp, Pune, Maharashtra 411001",
   landmark: "Near East Street & Main Cantonment Market",
   googleMapsUrl: "https://maps.google.com/?q=Pune+Camp+Pune+Maharashtra+411001",
@@ -541,7 +541,7 @@ export const TESTIMONIALS = [
     name: "Farida & Tariq Merchant",
     title: "Koregaon Park • Weekly Diners",
     rating: 5,
-    quote: "In an age of cold ghost kitchens and modern fusion experiments, Agra Hotel is Pune’s steady culinary sanctuary. The mutton handi and hot garlic butter naan here are unmatched anywhere in Western India."
+    quote: "In an age of cold ghost kitchens and modern fusion experiments, Agra Restaurant is Pune’s steady culinary sanctuary. The mutton handi and hot garlic butter naan here are unmatched anywhere in Western India."
   },
   {
     id: 3,
@@ -555,7 +555,7 @@ export const TESTIMONIALS = [
     name: "Dr. Zulfikar Poonawala",
     title: "Cantonment Heritage Trust Member",
     rating: 5,
-    quote: "Agra Hotel is intrinsic to the living history of Pune Camp. The aroma drifting from their charcoal sigris at dusk is an indelible signature of our town's culinary heritage."
+    quote: "Agra Restaurant is intrinsic to the living history of Pune Camp. The aroma drifting from their charcoal sigris at dusk is an indelible signature of our town's culinary heritage."
   }
 ];
 
@@ -574,7 +574,7 @@ export const FAQS = [
   {
     id: 3,
     q: "Is your meat 100% Halal certified?",
-    a: "Yes, absolutely. All meat cuts and poultry preparations at Agra Hotel are strictly 100% Halal certified, procured fresh daily from audited local butchers."
+    a: "Yes, absolutely. All meat cuts and poultry preparations at Agra Restaurant are strictly 100% Halal certified, procured fresh daily from audited local butchers."
   },
   {
     id: 4,

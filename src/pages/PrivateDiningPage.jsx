@@ -35,7 +35,7 @@ export default function PrivateDiningPage({ onShowToast }) {
     if (onShowToast) onShowToast('Banquet inquiry submitted! We will contact you shortly.', 'success');
 
     // Generate WhatsApp dispatch message
-    const message = `*AGRA HOTEL PUNE CAMP - PRIVATE DINING & BANQUET INQUIRY*%0A%0A` +
+    const message = `*AGRA RESTAURANT PUNE CAMP - PRIVATE DINING & BANQUET INQUIRY*%0A%0A` +
       `*Host Name:* ${hostName}%0A` +
       `*Phone:* ${hostPhone}%0A` +
       `*Event Type:* ${eventType}%0A` +
@@ -96,7 +96,7 @@ export default function PrivateDiningPage({ onShowToast }) {
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <img
             src="/images/brick-wall-dining.jpg"
-            alt="Agra Hotel Banquet & Celebrations"
+            alt="Agra Restaurant Banquet & Celebrations"
             className="w-full h-full object-cover filter brightness-[0.32] contrast-125 animate-kenburns"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#18100C] via-[#241812]/80 to-[#18100C]/90" />
@@ -163,7 +163,7 @@ export default function PrivateDiningPage({ onShowToast }) {
               </div>
 
               <a
-                href={`https://wa.me/${RESTAURANT_INFO.whatsapp}?text=Hello%20Agra%20Hotel!%20I%20am%20interested%20in%20the%20${encodeURIComponent(pkg.title)}%20package.`}
+                href={`https://wa.me/${RESTAURANT_INFO.whatsapp}?text=Hello%20Agra%20Restaurant!%20I%20am%20interested%20in%20the%20${encodeURIComponent(pkg.title)}%20package.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-shine w-full py-3 rounded-xl bg-[#241812] hover:bg-[#36241B] text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 cursor-pointer shadow-md transition-all hover:-translate-y-0.5"

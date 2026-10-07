@@ -19,7 +19,7 @@ export default function TermsPage() {
             Terms of Dining & Service
           </h1>
           <p className="text-xs sm:text-sm text-stone-300 max-w-xl mx-auto font-light leading-relaxed">
-            Welcome to Agra Hotel. To ensure every family, patron, and traveller experiences the utmost comfort and prompt service, please review our dining guidelines.
+            Welcome to Agra Restaurant. To ensure every family, patron, and traveller experiences the utmost comfort and prompt service, please review our dining guidelines.
           </p>
         </AnimatedReveal>
       </section>
@@ -34,7 +34,7 @@ export default function TermsPage() {
               <h2 className="font-serif text-xl sm:text-2xl font-bold">1. Table Reservations & Courtesy Hold</h2>
             </div>
             <p className="text-xs sm:text-sm text-stone-600">
-              During peak dinner hours (07:30 PM – 10:30 PM) and weekend lunch sessions, Agra Hotel reserves tables with a <strong>15-minute courtesy grace period</strong> from your scheduled arrival time. If your party anticipates a delay due to Pune Camp traffic, please notify our desk via telephone so we may preserve your seating.
+              During peak dinner hours (07:30 PM – 10:30 PM) and weekend lunch sessions, Agra Restaurant reserves tables with a <strong>15-minute courtesy grace period</strong> from your scheduled arrival time. If your party anticipates a delay due to Pune Camp traffic, please notify our desk via telephone so we may preserve your seating.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ export default function TermsPage() {
               <h2 className="font-serif text-xl sm:text-2xl font-bold">2. Culinary Purity & Halal Standards</h2>
             </div>
             <p className="text-xs sm:text-sm text-stone-600">
-              All mutton, poultry, and meat preparations at Agra Hotel are strictly <strong>100% Halal certified</strong>, inspected daily, and prepared in sanitized kitchen stations. We use zero artificial food colorings and slow-cook our dishes using traditional desi ghee, cold-pressed oils, and hand-ground spices.
+              All mutton, poultry, and meat preparations at Agra Restaurant are strictly <strong>100% Halal certified</strong>, inspected daily, and prepared in sanitized kitchen stations. We use zero artificial food colorings and slow-cook our dishes using traditional desi ghee, cold-pressed oils, and hand-ground spices.
             </p>
           </div>
 

@@ -22,7 +22,7 @@ export default function StorySection({ onExploreMore }) {
             </h2>
 
             <p className="text-stone-700 text-sm sm:text-base leading-relaxed font-normal">
-              Agra Hotel, located in the historic heart of Pune Camp, has been serving authentic North Indian and royal Mughlai preparations with unwavering consistency and heartfelt hospitality.
+              Agra Restaurant, located in the historic heart of Pune Camp, has been serving authentic North Indian and royal Mughlai preparations with unwavering consistency and heartfelt hospitality.
             </p>
 
             <p className="text-stone-600 text-sm sm:text-base leading-relaxed font-light">
@@ -45,7 +45,7 @@ export default function StorySection({ onExploreMore }) {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-stone-200 img-zoom group">
               <img
                 src="/images/rattan-dining-booths.png"
-                alt="Agra Hotel Comfortable Green Paneling and Rattan Family Dining Area"
+                alt="Agra Restaurant Comfortable Green Paneling and Rattan Family Dining Area"
                 className="w-full h-[400px] sm:h-[480px] object-cover object-center filter contrast-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />

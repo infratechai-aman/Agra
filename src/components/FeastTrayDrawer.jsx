@@ -39,7 +39,7 @@ export default function FeastTrayDrawer({
       .map((item, idx) => `${idx + 1}. ${item.name} x ${item.quantity} = ₹${item.price * item.quantity}`)
       .join('%0A');
 
-    const message = `*AGRA HOTEL PUNE CAMP - FEAST TRAY ORDER*%0A%0A` +
+    const message = `*AGRA RESTAURANT PUNE CAMP - FEAST TRAY ORDER*%0A%0A` +
       `*Order Type:* ${orderType === 'dine-in' ? 'Table Pre-Order / Dine-In' : 'Takeaway / Camp Delivery'}%0A` +
       `*Guest Name:* ${customerName || 'Guest'}%0A` +
       `*Phone:* ${customerPhone || 'Not provided'}%0A` +

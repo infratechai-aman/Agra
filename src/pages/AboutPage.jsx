@@ -16,7 +16,7 @@ export default function AboutPage({ onOpenBooking }) {
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <img
             src="/images/hero-dining-hall.png"
-            alt="Agra Hotel Heritage"
+            alt="Agra Restaurant Heritage"
             className="w-full h-full object-cover filter brightness-[0.35] contrast-125 animate-kenburns"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#18100C] via-[#241812]/80 to-[#18100C]/90" />

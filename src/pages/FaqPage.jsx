@@ -21,7 +21,7 @@ export default function FaqPage() {
   const faqData = [
     {
       category: 'Reservations',
-      question: 'Do I need a reservation to dine at Agra Hotel Pune Camp?',
+      question: 'Do I need a reservation to dine at Agra Restaurant Pune Camp?',
       answer: 'Walk-in guests are always warmly welcomed! However, during weekend dinners (Friday to Sunday, 07:30 PM – 10:30 PM) and public holidays, reserving a table via our online booking form or telephone is strongly recommended to avoid waiting.'
     },
     {
@@ -31,8 +31,8 @@ export default function FaqPage() {
     },
     {
       category: 'Halal & Sourcing',
-      question: 'Is all food served at Agra Hotel 100% Halal certified?',
-      answer: 'Yes, absolutely. All mutton, chicken, and meat sourced by Agra Hotel is 100% Halal certified, procured fresh daily from audited local distributors. Our kitchen operates under strict hygiene and purity protocols.'
+      question: 'Is all food served at Agra Restaurant 100% Halal certified?',
+      answer: 'Yes, absolutely. All mutton, chicken, and meat sourced by Agra Restaurant is 100% Halal certified, procured fresh daily from audited local distributors. Our kitchen operates under strict hygiene and purity protocols.'
     },
     {
       category: 'Halal & Sourcing',
@@ -41,7 +41,7 @@ export default function FaqPage() {
     },
     {
       category: 'Location & Parking',
-      question: 'Where is Agra Hotel located in Pune Camp?',
+      question: 'Where is Agra Restaurant located in Pune Camp?',
       answer: 'We are situated in the historic cantonment quarter of Pune Camp, easily accessible from MG Road, East Street, and Pune Railway Station. Landmark: Near the historic Camp Post Office area.'
     },
     {
@@ -205,7 +205,7 @@ export default function FaqPage() {
               <span>Call Us</span>
             </a>
             <a
-              href={`https://wa.me/${RESTAURANT_INFO.whatsapp}?text=Hello%20Agra%20Hotel!%20I%20have%20a%20question.`}
+              href={`https://wa.me/${RESTAURANT_INFO.whatsapp}?text=Hello%20Agra%20Restaurant!%20I%20have%20a%20question.`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20ba5a] text-white text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-md cursor-pointer"
