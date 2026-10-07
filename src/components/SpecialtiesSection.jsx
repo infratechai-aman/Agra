@@ -5,10 +5,10 @@ import AnimatedReveal from './AnimatedReveal';
 
 export default function SpecialtiesSection({ onAddToCart, cartItems, onExploreMenu }) {
   return (
-    <section id="specialties" className="py-24 sm:py-32 px-4 sm:px-8 bg-[#F3EFE6] border-y border-[#E0D3C1] overflow-hidden">
+    <section id="specialties" className="py-14 sm:py-32 px-4 sm:px-8 bg-[#F3EFE6] border-y border-[#E0D3C1] overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header row with Reveal */}
-        <AnimatedReveal animation="fade-up" className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
+        <AnimatedReveal animation="fade-up" className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-8 sm:mb-12">
           <div>
             <div className="inline-flex items-center gap-2 text-[#775a19] text-xs font-bold uppercase tracking-[0.2em] mb-2">
               <Sparkles className="w-4 h-4 text-[#C9A45C] animate-sparkle" />

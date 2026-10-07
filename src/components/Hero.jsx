@@ -71,61 +71,73 @@ export default function Hero({ onOpenBooking, onScrollToMenu }) {
         </div>
       </div>
 
-      {/* Trust Bar / Heritage Highlights with Staggered Scroll Entrance */}
-      <div className="relative z-10 max-w-7xl mx-auto w-full pt-8 border-t border-white/10">
-        <AnimatedReveal animation="fade-up" delay={200} stagger className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
-          {/* Item 1: Authentic Cuisine */}
-          <div className="group hover-lift flex items-center gap-3.5 p-3.5 rounded-2xl bg-black/45 backdrop-blur-md border border-white/10 hover:border-[#C9A45C]/50 hover:bg-[#241812]/90 transition-all cursor-default">
-            <div className="w-10 h-10 rounded-full border border-[#C9A45C]/50 flex items-center justify-center text-[#C9A45C] shrink-0 bg-[#241812]/80 group-hover:scale-110 group-hover:bg-[#C9A45C] group-hover:text-[#18100C] transition-all duration-300">
-              <UtensilsCrossed className="w-5 h-5 transition-transform group-hover:rotate-12" />
-            </div>
-            <div>
-              <h4 className="text-white text-xs sm:text-sm font-semibold tracking-wide group-hover:text-[#E8D7B0] transition-colors">
-                Authentic
-              </h4>
-              <p className="text-stone-300 text-xs font-light">Mughlai Cuisine</p>
-            </div>
-          </div>
+      {/* Trust Bar / Heritage Highlights */}
+      <div className="relative z-10 max-w-7xl mx-auto w-full pt-6 sm:pt-8 border-t border-white/10">
+        {/* Mobile View: Minimalist, clean single-line luxury divider (Not AI-cluttered) */}
+        <div className="sm:hidden flex items-center justify-center gap-2.5 text-[11px] text-[#E8D7B0] tracking-widest uppercase font-medium">
+          <span>Authentic Mughlai</span>
+          <span className="text-[#C9A45C]/60">•</span>
+          <span>Family Suites</span>
+          <span className="text-[#C9A45C]/60">•</span>
+          <span>Since 1968</span>
+        </div>
 
-          {/* Item 2: Family Friendly Dining */}
-          <div className="group hover-lift flex items-center gap-3.5 p-3.5 rounded-2xl bg-black/45 backdrop-blur-md border border-white/10 hover:border-[#C9A45C]/50 hover:bg-[#241812]/90 transition-all cursor-default">
-            <div className="w-10 h-10 rounded-full border border-[#C9A45C]/50 flex items-center justify-center text-[#C9A45C] shrink-0 bg-[#241812]/80 group-hover:scale-110 group-hover:bg-[#C9A45C] group-hover:text-[#18100C] transition-all duration-300">
-              <Users className="w-5 h-5 transition-transform group-hover:scale-110" />
+        {/* Desktop View: Original 4-pillar cards */}
+        <div className="hidden sm:block">
+          <AnimatedReveal animation="fade-up" delay={200} stagger className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+            {/* Item 1: Authentic Cuisine */}
+            <div className="group hover-lift flex items-center gap-3.5 p-3.5 rounded-2xl bg-black/45 backdrop-blur-md border border-white/10 hover:border-[#C9A45C]/50 hover:bg-[#241812]/90 transition-all cursor-default">
+              <div className="w-10 h-10 rounded-full border border-[#C9A45C]/50 flex items-center justify-center text-[#C9A45C] shrink-0 bg-[#241812]/80 group-hover:scale-110 group-hover:bg-[#C9A45C] group-hover:text-[#18100C] transition-all duration-300">
+                <UtensilsCrossed className="w-5 h-5 transition-transform group-hover:rotate-12" />
+              </div>
+              <div>
+                <h4 className="text-white text-xs sm:text-sm font-semibold tracking-wide group-hover:text-[#E8D7B0] transition-colors">
+                  Authentic
+                </h4>
+                <p className="text-stone-300 text-xs font-light">Mughlai Cuisine</p>
+              </div>
             </div>
-            <div>
-              <h4 className="text-white text-xs sm:text-sm font-semibold tracking-wide group-hover:text-[#E8D7B0] transition-colors">
-                Family Friendly
-              </h4>
-              <p className="text-stone-300 text-xs font-light">Dedicated AC Suites</p>
-            </div>
-          </div>
 
-          {/* Item 3: Prime Location */}
-          <div className="group hover-lift flex items-center gap-3.5 p-3.5 rounded-2xl bg-black/45 backdrop-blur-md border border-white/10 hover:border-[#C9A45C]/50 hover:bg-[#241812]/90 transition-all cursor-default">
-            <div className="w-10 h-10 rounded-full border border-[#C9A45C]/50 flex items-center justify-center text-[#C9A45C] shrink-0 bg-[#241812]/80 group-hover:scale-110 group-hover:bg-[#C9A45C] group-hover:text-[#18100C] transition-all duration-300">
-              <MapPin className="w-5 h-5 transition-transform group-hover:-translate-y-0.5" />
+            {/* Item 2: Family Friendly Dining */}
+            <div className="group hover-lift flex items-center gap-3.5 p-3.5 rounded-2xl bg-black/45 backdrop-blur-md border border-white/10 hover:border-[#C9A45C]/50 hover:bg-[#241812]/90 transition-all cursor-default">
+              <div className="w-10 h-10 rounded-full border border-[#C9A45C]/50 flex items-center justify-center text-[#C9A45C] shrink-0 bg-[#241812]/80 group-hover:scale-110 group-hover:bg-[#C9A45C] group-hover:text-[#18100C] transition-all duration-300">
+                <Users className="w-5 h-5 transition-transform group-hover:scale-110" />
+              </div>
+              <div>
+                <h4 className="text-white text-xs sm:text-sm font-semibold tracking-wide group-hover:text-[#E8D7B0] transition-colors">
+                  Family Friendly
+                </h4>
+                <p className="text-stone-300 text-xs font-light">Dedicated AC Suites</p>
+              </div>
             </div>
-            <div>
-              <h4 className="text-white text-xs sm:text-sm font-semibold tracking-wide group-hover:text-[#E8D7B0] transition-colors">
-                Prime Location
-              </h4>
-              <p className="text-stone-300 text-xs font-light">Heart of Pune Camp</p>
-            </div>
-          </div>
 
-          {/* Item 4: Loved by Thousands */}
-          <div className="group hover-lift flex items-center gap-3.5 p-3.5 rounded-2xl bg-black/45 backdrop-blur-md border border-white/10 hover:border-[#C9A45C]/50 hover:bg-[#241812]/90 transition-all cursor-default">
-            <div className="w-10 h-10 rounded-full border border-[#C9A45C]/50 flex items-center justify-center text-[#C9A45C] shrink-0 bg-[#241812]/80 group-hover:scale-110 group-hover:bg-[#C9A45C] group-hover:text-[#18100C] transition-all duration-300">
-              <Award className="w-5 h-5 transition-transform group-hover:rotate-12" />
+            {/* Item 3: Prime Location */}
+            <div className="group hover-lift flex items-center gap-3.5 p-3.5 rounded-2xl bg-black/45 backdrop-blur-md border border-white/10 hover:border-[#C9A45C]/50 hover:bg-[#241812]/90 transition-all cursor-default">
+              <div className="w-10 h-10 rounded-full border border-[#C9A45C]/50 flex items-center justify-center text-[#C9A45C] shrink-0 bg-[#241812]/80 group-hover:scale-110 group-hover:bg-[#C9A45C] group-hover:text-[#18100C] transition-all duration-300">
+                <MapPin className="w-5 h-5 transition-transform group-hover:-translate-y-0.5" />
+              </div>
+              <div>
+                <h4 className="text-white text-xs sm:text-sm font-semibold tracking-wide group-hover:text-[#E8D7B0] transition-colors">
+                  Prime Location
+                </h4>
+                <p className="text-stone-300 text-xs font-light">Heart of Pune Camp</p>
+              </div>
             </div>
-            <div>
-              <h4 className="text-white text-xs sm:text-sm font-semibold tracking-wide group-hover:text-[#E8D7B0] transition-colors">
-                Loved by
-              </h4>
-              <p className="text-stone-300 text-xs font-light">3 Generations</p>
+
+            {/* Item 4: Loved by Thousands */}
+            <div className="group hover-lift flex items-center gap-3.5 p-3.5 rounded-2xl bg-black/45 backdrop-blur-md border border-white/10 hover:border-[#C9A45C]/50 hover:bg-[#241812]/90 transition-all cursor-default">
+              <div className="w-10 h-10 rounded-full border border-[#C9A45C]/50 flex items-center justify-center text-[#C9A45C] shrink-0 bg-[#241812]/80 group-hover:scale-110 group-hover:bg-[#C9A45C] group-hover:text-[#18100C] transition-all duration-300">
+                <Award className="w-5 h-5 transition-transform group-hover:rotate-12" />
+              </div>
+              <div>
+                <h4 className="text-white text-xs sm:text-sm font-semibold tracking-wide group-hover:text-[#E8D7B0] transition-colors">
+                  Loved by
+                </h4>
+                <p className="text-stone-300 text-xs font-light">3 Generations</p>
+              </div>
             </div>
-          </div>
-        </AnimatedReveal>
+          </AnimatedReveal>
+        </div>
       </div>
     </section>
   );

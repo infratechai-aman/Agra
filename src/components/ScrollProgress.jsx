@@ -18,11 +18,9 @@ export default function ScrollProgress() {
 
   return (
     <div
-      className="fixed top-0 left-0 right-0 h-1 z-[100] pointer-events-none transition-all duration-150 ease-out"
+      className="fixed top-0 left-0 right-0 h-[2px] z-[100] pointer-events-none transition-all duration-150 ease-out bg-[#C9A45C]"
       style={{
-        width: `${scrollProgress}%`,
-        background: 'linear-gradient(90deg, #775a19, #C9A45C, #FDD487)',
-        boxShadow: '0 0 10px rgba(201, 164, 92, 0.7), 0 0 20px rgba(201, 164, 92, 0.4)'
+        width: `${scrollProgress}%`
       }}
     />
   );

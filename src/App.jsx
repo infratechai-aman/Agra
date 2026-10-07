@@ -248,7 +248,7 @@ export default function App() {
 
         <button
           onClick={() => navigate('/reservations')}
-          className="px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-full bg-[#C9A45C] hover:bg-[#b59146] text-[#18100C] shadow-2xl flex items-center gap-1.5 sm:gap-2 transition-all duration-300 cursor-pointer hover-lift font-bold text-xs uppercase tracking-wider btn-shine hover:shadow-[0_0_25px_rgba(201,164,92,0.5)] active:scale-95"
+          className="hidden sm:inline-flex px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-full bg-[#C9A45C] hover:bg-[#b59146] text-[#18100C] shadow-2xl items-center gap-1.5 sm:gap-2 transition-all duration-300 cursor-pointer hover-lift font-bold text-xs uppercase tracking-wider btn-shine hover:shadow-[0_0_25px_rgba(201,164,92,0.5)] active:scale-95"
           aria-label="Navigate to Reservations"
         >
           <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 animate-pulse" />

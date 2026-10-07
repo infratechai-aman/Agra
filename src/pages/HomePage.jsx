@@ -68,8 +68,8 @@ export default function HomePage({ onOpenBooking, onAddToCart, cartItems }) {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
               </div>
 
-              {/* Floating Badge with Gentle Hover Motion */}
-              <div className="relative lg:absolute -bottom-6 lg:-bottom-6 right-0 lg:-right-4 w-full sm:max-w-sm mt-4 lg:mt-0 bg-[#2E3321] text-white p-5 sm:p-6 rounded-2xl shadow-2xl border border-white/10 flex items-start gap-4 animate-float-slow hover:border-[#C9A45C]/50 transition-all">
+              {/* Floating Badge (Shown on tablet/desktop, hidden on mobile for clean minimalist aesthetics) */}
+              <div className="hidden sm:flex lg:absolute -bottom-6 lg:-bottom-6 right-0 lg:-right-4 w-full sm:max-w-sm mt-4 lg:mt-0 bg-[#2E3321] text-white p-5 sm:p-6 rounded-2xl shadow-2xl border border-white/10 items-start gap-4 animate-float-slow hover:border-[#C9A45C]/50 transition-all">
                 <div className="w-12 h-12 rounded-xl bg-white/10 border border-[#C9A45C]/40 flex items-center justify-center text-[#C9A45C] shrink-0">
                   <Award className="w-6 h-6 animate-sparkle" />
                 </div>
@@ -172,13 +172,13 @@ export default function HomePage({ onOpenBooking, onAddToCart, cartItems }) {
             </h2>
           </AnimatedReveal>
 
-          <AnimatedReveal animation="fade-up" delay={100} stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <AnimatedReveal animation="fade-up" delay={100} stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
             {RESTAURANT_INFO.pillars.map((pillar) => (
-              <div key={pillar.num} className="hover-lift group p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-[#C9A45C]/40 hover:bg-white/10 space-y-3 transition-all cursor-default">
-                <div className="w-12 h-12 rounded-xl bg-white/10 border border-[#C9A45C]/40 flex items-center justify-center text-[#C9A45C] group-hover:bg-[#C9A45C] group-hover:text-[#18100C] transition-all">
-                  <span className="font-serif text-xl font-bold">{pillar.num}</span>
+              <div key={pillar.num} className="hover-lift group p-5 sm:p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-[#C9A45C]/40 hover:bg-white/10 space-y-3 transition-all cursor-default">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-white/10 border border-[#C9A45C]/40 flex items-center justify-center text-[#C9A45C] group-hover:bg-[#C9A45C] group-hover:text-[#18100C] transition-all">
+                  <span className="font-serif text-lg sm:text-xl font-bold">{pillar.num}</span>
                 </div>
-                <h3 className="text-lg font-serif font-bold text-[#E8D7B0] group-hover:text-white transition-colors">
+                <h3 className="text-base sm:text-lg font-serif font-bold text-[#E8D7B0] group-hover:text-white transition-colors">
                   {pillar.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-stone-300 font-light leading-relaxed">
@@ -192,9 +192,9 @@ export default function HomePage({ onOpenBooking, onAddToCart, cartItems }) {
 
       {/* 6. Visit & Table Reservation Banner */}
       <section className="relative bg-[#18100C] text-white overflow-hidden">
-        <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[500px]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[460px] sm:min-h-[500px]">
           {/* Left Side: Photo with Ken Burns */}
-          <div className="lg:col-span-6 relative min-h-[360px] lg:min-h-full overflow-hidden">
+          <div className="lg:col-span-6 relative min-h-[240px] sm:min-h-[360px] lg:min-h-full overflow-hidden">
             <img
               src="/images/hero-dining-hall.png"
               alt="Agra Hotel Dining Room"
@@ -204,7 +204,7 @@ export default function HomePage({ onOpenBooking, onAddToCart, cartItems }) {
           </div>
 
           {/* Right Side: Information Panel */}
-          <AnimatedReveal animation="fade-left" className="lg:col-span-6 bg-[#232719] p-8 sm:p-14 lg:p-16 flex flex-col justify-center">
+          <AnimatedReveal animation="fade-left" className="lg:col-span-6 bg-[#232719] p-6 sm:p-14 lg:p-16 flex flex-col justify-center">
             <div className="max-w-xl space-y-6">
               <span className="text-xs font-bold tracking-[0.2em] text-[#C9A45C] uppercase block">
                 Visit Us
