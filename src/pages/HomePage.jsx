@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
-import MarqueeTicker from '../components/MarqueeTicker';
 import SpecialtiesSection from '../components/SpecialtiesSection';
 import AnimatedReveal from '../components/AnimatedReveal';
 import { RESTAURANT_INFO } from '../data/restaurantData';
@@ -26,9 +25,6 @@ export default function HomePage({ onOpenBooking, onAddToCart, cartItems }) {
         onOpenBooking={onOpenBooking}
         onScrollToMenu={() => {}}
       />
-
-      {/* Luxury Accreditation & Heritage Marquee Ticker */}
-      <MarqueeTicker />
 
       {/* 2. Brand Story Teaser with Image 2 */}
       <section className="py-14 sm:py-24 px-4 sm:px-8 bg-[#FAF8F3] relative overflow-hidden">

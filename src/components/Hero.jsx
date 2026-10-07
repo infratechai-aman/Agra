@@ -7,7 +7,7 @@ export default function Hero({ onOpenBooking, onScrollToMenu }) {
   return (
     <section
       id="hero"
-      className="relative min-h-[92vh] sm:min-h-screen flex flex-col justify-between pt-32 pb-12 px-4 sm:px-8 overflow-hidden bg-[#18100C]"
+      className="relative min-h-[92vh] sm:min-h-screen flex flex-col justify-between pt-28 sm:pt-32 pb-16 sm:pb-12 px-4 sm:px-8 overflow-hidden bg-[#18100C]"
     >
       {/* Background Image with Ken Burns Ambient Motion & Walnut Gradient Overlays */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
@@ -18,7 +18,7 @@ export default function Hero({ onOpenBooking, onScrollToMenu }) {
         />
         {/* Chiaroscuro Vignette & Gradient Overlays */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#18100C] via-[#241812]/60 to-[#18100C]/85 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#18100C]/95 via-[#18100C]/75 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-[#18100C]/95 via-[#18100C]/75 to-[#18100C]/60 sm:to-transparent" />
         
         {/* Subtle Ambient Golden Ember Radiance */}
         <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-[#C9A45C]/10 rounded-full blur-3xl pointer-events-none animate-pulse-gold" />
@@ -26,18 +26,19 @@ export default function Hero({ onOpenBooking, onScrollToMenu }) {
 
       {/* Hero Main Content */}
       <div className="relative z-10 max-w-7xl mx-auto w-full my-auto py-10 sm:py-16">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl mx-auto sm:mx-0 flex flex-col items-center sm:items-start text-center sm:text-left">
           {/* Eyebrow Tag */}
-          <div className="inline-flex items-center gap-3 mb-4 animate-fade-in">
-            <span className="w-10 h-[1.5px] bg-[#C9A45C] shimmer-gold-bar" />
-            <p className="text-xs sm:text-sm font-semibold tracking-[0.25em] text-[#C9A45C] uppercase flex items-center gap-2">
+          <div className="inline-flex items-center justify-center sm:justify-start gap-2.5 sm:gap-3 mb-4 animate-fade-in">
+            <span className="w-8 sm:w-10 h-[1.5px] bg-[#C9A45C] shimmer-gold-bar" />
+            <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] sm:tracking-[0.25em] text-[#C9A45C] uppercase flex items-center gap-2">
               <Sparkles className="w-3.5 h-3.5 animate-sparkle" />
               <span>{RESTAURANT_INFO.tagline}</span>
             </p>
+            <span className="w-8 sm:hidden h-[1.5px] bg-[#C9A45C] shimmer-gold-bar" />
           </div>
 
           {/* Editorial Display Heading with Smooth Stagger Entrance */}
-          <h1 className="text-4xl xs:text-5xl sm:text-7xl lg:text-8xl font-serif font-normal text-white leading-[1.08] sm:leading-[1.05] tracking-tight mb-5 sm:mb-6 animate-slide-up">
+          <h1 className="text-4xl xs:text-5xl sm:text-7xl lg:text-8xl font-serif font-normal text-white leading-[1.08] sm:leading-[1.05] tracking-tight mb-5 sm:mb-6 animate-slide-up text-center sm:text-left">
             Agra Hotel<br />
             <span className="italic font-normal text-[#E8D7B0] transition-colors hover:text-[#C9A45C]">
               {RESTAURANT_INFO.city}
@@ -45,12 +46,12 @@ export default function Hero({ onOpenBooking, onScrollToMenu }) {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-sm sm:text-lg text-stone-200 font-light leading-relaxed mb-6 sm:mb-8 max-w-xl animate-fade-in" style={{ animationDelay: '0.15s' }}>
+          <p className="text-sm sm:text-lg text-stone-200 font-light leading-relaxed mb-6 sm:mb-8 max-w-xl mx-auto sm:mx-0 text-center sm:text-left animate-fade-in" style={{ animationDelay: '0.15s' }}>
             {RESTAURANT_INFO.description}
           </p>
 
           {/* Dual Action CTAs with Micro-Animations */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center sm:justify-start gap-3 sm:gap-4 animate-fade-in w-full sm:w-auto" style={{ animationDelay: '0.3s' }}>
             <button
               onClick={onScrollToMenu}
               className="btn-shine w-full sm:w-auto px-6 sm:px-7 py-3.5 rounded-xl bg-[#C9A45C] hover:bg-[#b59146] text-[#18100C] font-bold text-xs sm:text-sm tracking-wide transition-all duration-300 shadow-xl flex items-center justify-center gap-2 group cursor-pointer hover:shadow-2xl hover:-translate-y-1 hover:shadow-[#C9A45C]/30 active:scale-95"
