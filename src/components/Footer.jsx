@@ -17,25 +17,17 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
             {/* Brand Summary */}
             <div className="lg:col-span-4 space-y-5">
-              <Link to="/" className="flex items-center gap-3 group inline-flex">
-                <div className="w-10 h-10 border border-[#C9A45C]/70 rounded-t-full flex items-center justify-center p-1.5 bg-[#241812] group-hover:scale-105 group-hover:border-[#C9A45C] group-hover:shadow-[0_0_15px_rgba(201,164,92,0.3)] transition-all duration-300">
-                  <svg
-                    className="w-full h-full text-[#C9A45C] transition-transform duration-300 group-hover:scale-105"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.8"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M3 21h18M5 21V9a7 7 0 0 1 14 0v12M9 21V11a3 3 0 0 1 6 0v10" />
-                  </svg>
-                </div>
+              <Link to="/" className="flex items-center gap-3.5 group inline-flex">
+                <img
+                  src="/images/agra-logo.png"
+                  alt="Agra Restaurant Official Crest Logo"
+                  className="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-full border-2 border-[#C9A45C]/60 bg-[#241812] p-1.5 shadow-xl group-hover:scale-105 group-hover:border-[#C9A45C] group-hover:shadow-[0_0_25px_rgba(201,164,92,0.4)] transition-all duration-300 shrink-0"
+                />
                 <div>
-                  <span className="font-serif tracking-widest text-xl font-bold uppercase text-white block group-hover:text-[#C9A45C] transition-colors">
+                  <span className="font-serif tracking-widest text-xl sm:text-2xl font-bold uppercase text-white block group-hover:text-[#C9A45C] transition-colors leading-none">
                     {RESTAURANT_INFO.name}
                   </span>
-                  <span className="text-[10px] uppercase tracking-[0.25em] text-[#C9A45C] font-semibold">
+                  <span className="text-[10px] uppercase tracking-[0.25em] text-[#C9A45C] font-semibold block mt-1">
                     {RESTAURANT_INFO.city}
                   </span>
                 </div>

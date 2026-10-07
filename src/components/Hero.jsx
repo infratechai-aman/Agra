@@ -27,6 +27,15 @@ export default function Hero({ onOpenBooking, onScrollToMenu }) {
       {/* Hero Main Content */}
       <div className="relative z-10 max-w-7xl mx-auto w-full my-auto py-10 sm:py-16">
         <div className="max-w-2xl mx-auto sm:mx-0 flex flex-col items-center sm:items-start text-center sm:text-left">
+          {/* Big Size Brand Emblem Logo (For Mobile & Desktop) */}
+          <div className="mb-5 sm:mb-6 animate-scale-in group">
+            <img
+              src="/images/agra-logo.png"
+              alt="Agra Restaurant Official Crest Logo"
+              className="w-32 h-32 xs:w-40 xs:h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 object-contain rounded-full shadow-[0_12px_40px_rgba(0,0,0,0.85)] border-2 border-[#C9A45C]/60 p-2 sm:p-2.5 bg-[#18100C]/85 backdrop-blur-md group-hover:scale-105 group-hover:border-[#C9A45C] transition-all duration-500"
+            />
+          </div>
+
           {/* Eyebrow Tag */}
           <div className="inline-flex items-center justify-center sm:justify-start gap-2.5 sm:gap-3 mb-4 animate-fade-in">
             <span className="w-8 sm:w-10 h-[1.5px] bg-[#C9A45C] shimmer-gold-bar" />

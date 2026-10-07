@@ -41,29 +41,21 @@ export default function Navbar({ onOpenBooking, onOpenTray, trayItemCount }) {
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        {/* Brand Logo with Mughal Arch Motif */}
+        {/* Brand Logo with Official Crest */}
         <Link
           to="/"
-          className="flex items-center gap-2 sm:gap-3 text-left group shrink-0"
+          className="flex items-center gap-2.5 sm:gap-3.5 text-left group shrink-0"
         >
-          <div className="w-8 h-8 sm:w-10 sm:h-10 border border-[#C9A45C]/70 rounded-t-full flex items-center justify-center p-1 sm:p-1.5 transition-all duration-300 group-hover:scale-110 group-hover:border-[#C9A45C] group-hover:shadow-[0_0_20px_rgba(201,164,92,0.35)] bg-[#241812]">
-            <svg
-              className="w-full h-full text-[#C9A45C] transition-transform duration-300 group-hover:scale-105"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.8"
-              viewBox="0 0 24 24"
-            >
-              <path d="M3 21h18M5 21V9a7 7 0 0 1 14 0v12M9 21V11a3 3 0 0 1 6 0v10" />
-            </svg>
-          </div>
+          <img
+            src="/images/agra-logo.png"
+            alt="Agra Restaurant Official Logo"
+            className="w-12 h-12 xs:w-14 xs:h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain rounded-full border-2 border-[#C9A45C]/60 bg-[#18100C]/85 p-1 shadow-xl group-hover:scale-105 group-hover:border-[#C9A45C] group-hover:shadow-[0_0_25px_rgba(201,164,92,0.4)] transition-all duration-300 shrink-0"
+          />
           <div className="flex flex-col">
-            <span className="font-serif tracking-widest text-base sm:text-xl font-bold uppercase text-white drop-shadow-sm group-hover:text-[#C9A45C] transition-colors duration-300">
+            <span className="font-serif tracking-widest text-base xs:text-lg sm:text-2xl font-bold uppercase text-white drop-shadow-sm group-hover:text-[#C9A45C] transition-colors duration-300 leading-none">
               {RESTAURANT_INFO.name}
             </span>
-            <span className="text-[8px] sm:text-[9px] uppercase tracking-[0.25em] text-[#C9A45C] font-semibold transition-all duration-300 group-hover:tracking-[0.3em]">
+            <span className="text-[8px] sm:text-[10px] uppercase tracking-[0.25em] text-[#C9A45C] font-semibold mt-1">
               {RESTAURANT_INFO.city}
             </span>
           </div>
@@ -139,6 +131,20 @@ export default function Navbar({ onOpenBooking, onOpenTray, trayItemCount }) {
       {/* Mobile Slide-Down Menu with Safe Scroll */}
       {mobileMenuOpen && (
         <div className="lg:hidden mt-3 max-h-[82vh] overflow-y-auto no-scrollbar bg-[#18100C]/98 backdrop-blur-2xl rounded-2xl p-5 sm:p-6 border border-[#C9A45C]/35 shadow-2xl flex flex-col gap-2 text-center animate-slide-down">
+          {/* Official Brand Crest Header in Mobile Menu */}
+          <div className="flex flex-col items-center justify-center pb-3 border-b border-white/10 mb-2">
+            <img
+              src="/images/agra-logo.png"
+              alt="Agra Restaurant Official Logo"
+              className="w-20 h-20 object-contain rounded-full border-2 border-[#C9A45C]/60 bg-[#241812] p-1.5 shadow-xl mb-1.5"
+            />
+            <span className="font-serif text-lg font-bold text-white tracking-widest uppercase">
+              {RESTAURANT_INFO.name}
+            </span>
+            <span className="text-[9px] uppercase tracking-[0.25em] text-[#C9A45C] font-semibold">
+              {RESTAURANT_INFO.city}
+            </span>
+          </div>
           {navLinks.map((link, idx) => {
             const isActive = location.pathname === link.path;
 

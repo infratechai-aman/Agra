@@ -88,16 +88,23 @@ export default function QuickBookingModal({ isOpen, onClose, onShowToast }) {
           </div>
         ) : (
           <div>
-            <div className="mb-6 space-y-1">
-              <span className="text-xs text-[#C9A45C] tracking-widest uppercase font-semibold block">
-                Reserve Your Experience
-              </span>
-              <h3 className="text-2xl font-serif text-white font-bold">
-                Book a Table at Agra Hotel
-              </h3>
-              <p className="text-xs text-stone-400">
-                Instant confirmation for your family & friends gathering in Pune Camp.
-              </p>
+            <div className="mb-6 flex items-center gap-3.5 pb-4 border-b border-white/10">
+              <img
+                src="/images/agra-logo.png"
+                alt="Agra Restaurant Crest"
+                className="w-14 h-14 sm:w-16 sm:h-16 object-contain rounded-full border border-[#C9A45C]/50 bg-[#18100C] p-1 shadow-md shrink-0"
+              />
+              <div className="space-y-0.5">
+                <span className="text-[10px] text-[#C9A45C] tracking-widest uppercase font-semibold block">
+                  Reserve Your Experience
+                </span>
+                <h3 className="text-xl sm:text-2xl font-serif text-white font-bold leading-tight">
+                  Book a Table at Agra Hotel
+                </h3>
+                <p className="text-[11px] text-stone-400">
+                  Instant confirmation for your dining in Pune Camp
+                </p>
+              </div>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-4">
