@@ -8,8 +8,7 @@ import {
   MessageCircle, 
   Phone, 
   UtensilsCrossed, 
-  Bike,
-  Sparkles 
+  Bike 
 } from 'lucide-react';
 import { RESTAURANT_INFO } from '../data/restaurantData';
 

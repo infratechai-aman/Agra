@@ -5,7 +5,6 @@ import {
   Search, 
   Phone, 
   MessageCircle, 
-  Sparkles, 
   Clock, 
   ShieldCheck, 
   MapPin, 

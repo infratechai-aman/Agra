@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, History, Flame, HeartHandshake, CheckCircle2, Award } from 'lucide-react';
+import { History, Flame, HeartHandshake, CheckCircle2, Award, UtensilsCrossed } from 'lucide-react';
 import { RESTAURANT_INFO } from '../data/restaurantData';
 import AnimatedReveal from './AnimatedReveal';
 import AnimatedCounter from './AnimatedCounter';
@@ -31,7 +31,7 @@ export default function StorySection({ onExploreMore }) {
 
             <div className="pt-2 flex flex-wrap items-center gap-4">
               <div className="p-4 rounded-xl bg-[#F5EDE1] border border-[#E0D3C1] shadow-sm flex items-center gap-3 hover-lift">
-                <CheckCircle2 className="w-6 h-6 text-[#775a19] shrink-0 animate-sparkle" />
+                <CheckCircle2 className="w-6 h-6 text-[#775a19] shrink-0" />
                 <div>
                   <h4 className="text-sm font-semibold text-[#241812]">Timeless Integrity</h4>
                   <p className="text-xs text-stone-600">Zero synthetic food colors, pure ghee, and heirloom recipes.</p>
@@ -54,7 +54,7 @@ export default function StorySection({ onExploreMore }) {
             {/* Floating Overlapping Badge */}
             <div className="relative lg:absolute -bottom-6 lg:-bottom-6 right-0 lg:-right-4 max-w-sm mt-4 lg:mt-0 bg-[#2E3321] text-white p-5 sm:p-6 rounded-2xl shadow-2xl border border-white/10 flex items-start gap-4 animate-float-slow hover:border-[#C9A45C]/50 transition-all">
               <div className="w-12 h-12 rounded-xl bg-white/10 border border-[#C9A45C]/40 flex items-center justify-center text-[#C9A45C] shrink-0">
-                <Award className="w-6 h-6 animate-sparkle" />
+                <Award className="w-6 h-6" />
               </div>
               <div>
                 <h3 className="text-sm sm:text-base font-semibold text-white tracking-wide mb-1">
@@ -103,7 +103,7 @@ export default function StorySection({ onExploreMore }) {
             <div className="hover-lift group p-8 rounded-2xl bg-[#FAF5EC] border border-[#E0D3C1] hover:border-[#C9A45C]/60 shadow-sm flex flex-col justify-between space-y-5 transition-all">
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-full bg-[#EADCC7] border border-[#C9A45C]/40 flex items-center justify-center text-[#775a19] group-hover:scale-110 group-hover:bg-[#C9A45C] group-hover:text-[#18100C] transition-all duration-300">
-                  <Sparkles className="w-6 h-6 animate-sparkle" />
+                  <UtensilsCrossed className="w-6 h-6" />
                 </div>
                 <h4 className="text-xl font-serif font-bold text-[#241812] group-hover:text-[#775a19] transition-colors">
                   Hand-Ground Spices & Masalas

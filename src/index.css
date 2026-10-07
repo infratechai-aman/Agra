@@ -337,9 +337,6 @@ button, a, input, select, textarea {
   animation: badgeBounce 0.6s ease-out forwards;
 }
 
-.animate-sparkle {
-  animation: sparkle 2.5s ease-in-out infinite;
-}
 
 /* Button Shimmer Effect */
 .btn-shine {

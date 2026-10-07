@@ -3,7 +3,6 @@ import {
   Users, 
   Calendar, 
   Clock, 
-  Sparkles, 
   UtensilsCrossed, 
   PartyPopper, 
   Building2, 
@@ -105,7 +104,7 @@ export default function PrivateDiningPage({ onShowToast }) {
 
         <AnimatedReveal animation="fade-up" className="relative z-10 max-w-4xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#36241B] text-[#E8D7B0] text-xs uppercase tracking-[0.2em] font-bold border border-[#C9A45C]/30">
-            <PartyPopper className="w-3.5 h-3.5 text-[#C9A45C] animate-sparkle" />
+            <PartyPopper className="w-3.5 h-3.5 text-[#C9A45C]" />
             <span>Celebrations • Reunions • Banquets</span>
           </div>
 

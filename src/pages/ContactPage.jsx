@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Phone, Clock, Mail, MessageCircle, Send, CheckCircle2, Sparkles } from 'lucide-react';
+import { MapPin, Phone, Clock, Mail, MessageCircle, Send, CheckCircle2 } from 'lucide-react';
 import { RESTAURANT_INFO } from '../data/restaurantData';
 import AnimatedReveal from '../components/AnimatedReveal';
 
@@ -28,8 +28,9 @@ export default function ContactPage({ onShowToast }) {
         <div className="absolute top-0 left-1/3 w-96 h-96 bg-[#C9A45C]/10 rounded-full blur-3xl pointer-events-none" />
         <AnimatedReveal animation="fade-up" className="max-w-4xl mx-auto space-y-4 relative z-10">
           <span className="text-xs uppercase tracking-[0.2em] text-[#C9A45C] font-bold block flex items-center justify-center gap-2">
-            <Sparkles className="w-3.5 h-3.5 animate-sparkle" />
+            <span className="w-5 h-0.5 bg-[#C9A45C]" />
             <span>Visit Us in Pune Camp</span>
+            <span className="w-5 h-0.5 bg-[#C9A45C]" />
           </span>
           <h1 className="text-3xl xs:text-4xl sm:text-6xl font-serif text-[#FAF8F3]">
             Contact & Location
@@ -48,7 +49,7 @@ export default function ContactPage({ onShowToast }) {
             {/* Address */}
             <div className="hover-lift p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-white border border-[#E0D3C1] shadow-sm space-y-3 transition-all">
               <div className="w-12 h-12 rounded-2xl bg-[#FAF5EC] border border-[#E0D3C1] flex items-center justify-center text-[#775a19]">
-                <MapPin className="w-6 h-6 animate-sparkle" />
+                <MapPin className="w-6 h-6" />
               </div>
               <h3 className="font-serif text-2xl font-bold text-[#241812]">
                 Restaurant Address

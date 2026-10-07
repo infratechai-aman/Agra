@@ -6,9 +6,9 @@ import {
   ChevronRight, 
   Camera, 
   Layers, 
-  Sparkles, 
   Users, 
-  Utensils 
+  Utensils,
+  Award 
 } from 'lucide-react';
 import { GALLERY_ITEMS } from '../data/restaurantData';
 import AnimatedReveal from './AnimatedReveal';
@@ -100,7 +100,7 @@ export default function GallerySection() {
                 </div>
               </div>
               <div className="hover-lift bg-white/5 backdrop-blur-md rounded-xl p-3 border border-white/10 flex items-center gap-2.5 transition-all">
-                <Sparkles className="w-4 h-4 text-[#C9A45C] shrink-0 animate-sparkle" />
+                <Award className="w-4 h-4 text-[#C9A45C] shrink-0" />
                 <div>
                   <div className="text-[10px] text-[#C9A45C] uppercase font-bold">Heritage</div>
                   <div className="text-xs text-white font-medium">Pune Camp Trust</div>
@@ -244,7 +244,7 @@ export default function GallerySection() {
 
               <div className="pt-6 border-t border-white/10 space-y-3">
                 <div className="text-xs text-[#E8D7B0] font-medium flex items-center gap-1.5">
-                  <Sparkles className="w-3.5 h-3.5 text-[#C9A45C]" />
+                  <Camera className="w-3.5 h-3.5 text-[#C9A45C]" />
                   <span>Agra Hotel • Pune Camp Cantonment Archive</span>
                 </div>
                 <button

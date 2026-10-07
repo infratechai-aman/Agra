@@ -10,7 +10,6 @@ import {
   Clock, 
   Phone, 
   MapPin, 
-  Sparkles, 
   Award, 
   Users, 
   CheckCircle2, 
@@ -71,7 +70,7 @@ export default function HomePage({ onOpenBooking, onAddToCart, cartItems }) {
               {/* Floating Badge (Shown on tablet/desktop, hidden on mobile for clean minimalist aesthetics) */}
               <div className="hidden sm:flex lg:absolute -bottom-6 lg:-bottom-6 right-0 lg:-right-4 w-full sm:max-w-sm mt-4 lg:mt-0 bg-[#2E3321] text-white p-5 sm:p-6 rounded-2xl shadow-2xl border border-white/10 items-start gap-4 animate-float-slow hover:border-[#C9A45C]/50 transition-all">
                 <div className="w-12 h-12 rounded-xl bg-white/10 border border-[#C9A45C]/40 flex items-center justify-center text-[#C9A45C] shrink-0">
-                  <Award className="w-6 h-6 animate-sparkle" />
+                  <Award className="w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="text-sm sm:text-base font-semibold text-white tracking-wide mb-1">

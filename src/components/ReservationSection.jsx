@@ -9,10 +9,9 @@ import {
   CheckCircle2, 
   ChevronDown, 
   ShieldCheck, 
-  Sparkles,
-  Armchair,
-  PartyPopper,
-  AlertCircle
+  Armchair, 
+  PartyPopper, 
+  AlertCircle 
 } from 'lucide-react';
 import { RESTAURANT_INFO, FAQS } from '../data/restaurantData';
 import AnimatedReveal from './AnimatedReveal';
@@ -78,7 +77,7 @@ export default function ReservationSection({ onShowToast }) {
         {/* Header Section */}
         <AnimatedReveal animation="fade-up" className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 text-[#775a19] text-xs font-bold uppercase tracking-[0.2em]">
-            <Sparkles className="w-4 h-4 text-[#C9A45C] animate-sparkle" />
+            <span className="w-5 h-0.5 bg-[#C9A45C]" />
             <span>Experience Traditional Hospitality</span>
           </div>
           <h2 className="text-3xl sm:text-6xl font-serif text-[#241812] tracking-tight">
@@ -91,7 +90,7 @@ export default function ReservationSection({ onShowToast }) {
           {/* Quick Assurances */}
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 pt-3 sm:pt-4 text-xs font-semibold text-[#241812]">
             <span className="flex items-center gap-2 hover:text-[#775a19] transition-colors">
-              <CheckCircle2 className="w-4 h-4 text-[#775a19] animate-sparkle" />
+              <CheckCircle2 className="w-4 h-4 text-[#775a19]" />
               <span>Instant Guarantee</span>
             </span>
             <span className="hidden xs:inline">•</span>
@@ -450,7 +449,7 @@ export default function ReservationSection({ onShowToast }) {
             <div className="hover-lift bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-[#E0D3C1] space-y-5 transition-all">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-[#FAF5EC] flex items-center justify-center text-[#775a19]">
-                  <ShieldCheck className="w-5 h-5 animate-sparkle" />
+                  <ShieldCheck className="w-5 h-5" />
                 </div>
                 <h4 className="font-serif text-xl font-bold text-[#241812]">Dining Policies</h4>
               </div>

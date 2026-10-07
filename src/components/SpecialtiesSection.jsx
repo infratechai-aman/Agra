@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Plus, Check, Sparkles } from 'lucide-react';
+import { ArrowRight, Plus, Check } from 'lucide-react';
 import { SIGNATURE_DISHES } from '../data/restaurantData';
 import AnimatedReveal from './AnimatedReveal';
 
@@ -11,7 +11,7 @@ export default function SpecialtiesSection({ onAddToCart, cartItems, onExploreMe
         <AnimatedReveal animation="fade-up" className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-8 sm:mb-12">
           <div>
             <div className="inline-flex items-center gap-2 text-[#775a19] text-xs font-bold uppercase tracking-[0.2em] mb-2">
-              <Sparkles className="w-4 h-4 text-[#C9A45C] animate-sparkle" />
+              <span className="w-5 h-0.5 bg-[#C9A45C]" />
               <span>Our Specialties</span>
             </div>
             <h2 className="text-4xl sm:text-5xl font-serif font-normal text-[#241812]">

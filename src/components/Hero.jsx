@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Calendar, UtensilsCrossed, Users, MapPin, Award, Sparkles } from 'lucide-react';
+import { ArrowRight, Calendar, UtensilsCrossed, Users, MapPin, Award } from 'lucide-react';
 import { RESTAURANT_INFO } from '../data/restaurantData';
 import AnimatedReveal from './AnimatedReveal';
 
@@ -30,8 +30,7 @@ export default function Hero({ onOpenBooking, onScrollToMenu }) {
           {/* Eyebrow Tag */}
           <div className="inline-flex items-center justify-center sm:justify-start gap-2.5 sm:gap-3 mb-4 animate-fade-in">
             <span className="w-8 sm:w-10 h-[1.5px] bg-[#C9A45C] shimmer-gold-bar" />
-            <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] sm:tracking-[0.25em] text-[#C9A45C] uppercase flex items-center gap-2">
-              <Sparkles className="w-3.5 h-3.5 animate-sparkle" />
+            <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] sm:tracking-[0.25em] text-[#C9A45C] uppercase">
               <span>{RESTAURANT_INFO.tagline}</span>
             </p>
             <span className="w-8 sm:hidden h-[1.5px] bg-[#C9A45C] shimmer-gold-bar" />

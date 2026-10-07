@@ -9,8 +9,7 @@ import {
   ShieldCheck, 
   Utensils, 
   Clock, 
-  Info,
-  Sparkles
+  Info 
 } from 'lucide-react';
 import { 
   MENU_CATEGORIES, 
@@ -175,7 +174,7 @@ export default function MenuSection({ onAddToCart, onRemoveFromCart, cartItems }
                     : 'bg-[#FDD487]/30 text-[#775a19] border border-[#C9A45C]/40 hover:bg-[#FDD487]/50'
                 }`}
               >
-                <Sparkles className="w-3.5 h-3.5 text-[#C9A45C]" />
+                <Flame className="w-3.5 h-3.5 text-[#C9A45C]" />
                 <span>Chef Specials</span>
               </button>
             </div>
@@ -362,7 +361,7 @@ export default function MenuSection({ onAddToCart, onRemoveFromCart, cartItems }
             <div className="hover-lift p-6 rounded-2xl bg-[#241812] text-[#FAF8F3] border border-[#C9A45C]/40 shadow-xl space-y-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-[#C9A45C] flex items-center justify-center text-[#241812] shadow-sm">
-                  <Phone className="w-5 h-5 animate-sparkle" />
+                  <Phone className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="text-base font-semibold text-[#FAF8F3]">Direct Kitchen Orders</h4>

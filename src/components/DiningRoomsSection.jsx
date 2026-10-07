@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Users, Sparkles, Flame, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Users, Flame, CheckCircle2 } from 'lucide-react';
 import AnimatedReveal from './AnimatedReveal';
 
 export default function DiningRoomsSection({ onReserveCorner }) {
@@ -8,7 +8,7 @@ export default function DiningRoomsSection({ onReserveCorner }) {
       <AnimatedReveal animation="fade-up" className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
         <div className="space-y-3 max-w-2xl">
           <div className="inline-flex items-center gap-2 text-[#775a19] text-xs font-bold uppercase tracking-[0.2em]">
-            <Sparkles className="w-4 h-4 text-[#C9A45C] animate-sparkle" />
+            <span className="w-5 h-0.5 bg-[#C9A45C]" />
             <span>Atmosphere & Ambience</span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-serif text-[#241812] tracking-tight">
@@ -89,7 +89,7 @@ export default function DiningRoomsSection({ onReserveCorner }) {
 
             <div className="pt-3 border-t border-[#E0D3C1] flex items-center justify-between text-xs text-[#775a19] font-semibold">
               <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-700 animate-sparkle" />
+                <CheckCircle2 className="w-4 h-4 text-emerald-700" />
                 <span>Capacity: 80 Guests</span>
               </span>
               <span className="text-[#241812] bg-[#EAE0CF] px-3 py-1 rounded-full text-[11px] font-bold">

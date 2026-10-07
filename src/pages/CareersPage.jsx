@@ -3,7 +3,6 @@ import {
   Briefcase, 
   Flame, 
   HeartHandshake, 
-  Sparkles, 
   Award, 
   CheckCircle2, 
   Send,

@@ -6,7 +6,7 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import AnimatedReveal from '../components/AnimatedReveal';
 import AnimatedCounter from '../components/AnimatedCounter';
 import { RESTAURANT_INFO } from '../data/restaurantData';
-import { History, Award, Calendar, ArrowRight, ShieldCheck, Sparkles } from 'lucide-react';
+import { History, Award, Calendar, ArrowRight, ShieldCheck } from 'lucide-react';
 
 export default function AboutPage({ onOpenBooking }) {
   return (
@@ -24,7 +24,7 @@ export default function AboutPage({ onOpenBooking }) {
 
         <AnimatedReveal animation="fade-up" className="relative z-10 max-w-7xl mx-auto flex flex-col items-center text-center space-y-5 sm:space-y-6">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#36241B] text-[#E8D7B0] text-xs uppercase tracking-[0.2em] font-bold border border-[#C9A45C]/30">
-            <History className="w-3.5 h-3.5 text-[#C9A45C] animate-sparkle" />
+            <History className="w-3.5 h-3.5 text-[#C9A45C]" />
             <span>Since Generations in Pune Camp</span>
           </div>
 
